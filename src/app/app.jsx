@@ -10,6 +10,9 @@ import TabRightButtton from "../ui/atoms/buttons/tab-right-btn";
 import SendMobBtn from "../ui/atoms/buttons/send-mobile-btn";
 import RegPopupBtn from "../ui/atoms/buttons/registration-popup-btn";
 import RegPopupMobBtn from "../ui/atoms/buttons/registration-popup-mobile-btn";
+import RangeSlider from "../ui/atoms/slider/slider";
+import RadioButtons from "../ui/atoms/radio-btn/radio-btn";
+import CheckboxBtn from "../ui/atoms/checkbox/checkbox";
 import { ThemeProvider } from "@emotion/react";
 import theme from "../ui/styles";
 
@@ -27,6 +30,9 @@ function App() {
       <SendMobBtn/>
       <RegPopupBtn/>
       <RegPopupMobBtn/>
+	  <RangeSlider/>
+	  <RadioButtons/>
+	  <CheckboxBtn/>
     </ThemeProvider>
   );
 }
