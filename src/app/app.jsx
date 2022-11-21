@@ -13,6 +13,8 @@ import RegPopupMobBtn from "../ui/atoms/buttons/registration-popup-mobile-btn";
 import RangeSlider from "../ui/atoms/slider/slider";
 import RadioButtons from "../ui/atoms/radio-btn/radio-btn";
 import CheckboxBtn from "../ui/atoms/checkbox/checkbox";
+import CustomSwitcher from "../ui/atoms/switcher/switcher-desktop";
+import Calendar from "../ui/atoms/calendar/calendar";
 import { ThemeProvider } from "@emotion/react";
 import theme from "../ui/styles";
 
@@ -33,6 +35,8 @@ function App() {
 	  <RangeSlider/>
 	  <RadioButtons/>
 	  <CheckboxBtn/>
+	  <CustomSwitcher/>
+	  <Calendar/>
     </ThemeProvider>
   );
 }
