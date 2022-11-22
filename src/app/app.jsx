@@ -17,6 +17,7 @@ import CustomSwitcher from "../ui/atoms/switcher/switcher-desktop";
 // import Calendar from "../ui/atoms/calendar/calendar";
 import PositionedMenu from "../ui/atoms/menu-active/menu-active";
 // import PopoupCallbackModal from "../ui/molecules/callback-popup/callback-popup";
+import PopoupRegistrationkModal from "../ui/molecules/registration-popup/registration-popup";
 import { ThemeProvider } from "@emotion/react";
 import theme from "../ui/styles";
 
@@ -39,6 +40,7 @@ function App() {
       <CheckboxBtn/>
       <CustomSwitcher/>
       <PositionedMenu/>
+      <PopoupRegistrationkModal/>
       {/* <PopoupCallbackModal/> */}
     </ThemeProvider>
   );

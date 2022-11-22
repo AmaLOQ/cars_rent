@@ -1,9 +1,9 @@
 import * as React from 'react';
-import {PaperCallback, PopupTitel, PopupDescr, PopupInput, CheckboxDescr, Overflow} from './callback-popup-styles';
+import {PaperCallback, PopupTitel, PopupDescr, PopupInput, Overflow, BoxPopupDescr, BoxPopupInput} from './callback-popup-styles';
 import Closer from '../../atoms/closer/closer';
-import CheckboxButton from '../../atoms/checkbox/checkbox';
 import SendBtn from '../../atoms/buttons/send-btn';
-import { CssBaseline,  Stack} from '@mui/material';
+import CheckboxAgree from '../checkbox-agree/checkbox-agree';
+import { CssBaseline } from '@mui/material';
 
 export default function PopoupCallbackModal() {
 	// Здесь получить размер окна из wind в useEffect и в моб разрешении устанавливать в use state флаг is mobile
@@ -13,12 +13,9 @@ export default function PopoupCallbackModal() {
 			<PaperCallback>
 				<Closer/>
 				<PopupTitel>Обратный звонок</PopupTitel>
-				<PopupDescr>Мы свяжемся с вами в ближайшее время!</PopupDescr>
-				<PopupInput placeholder='Телефон' type='tel'/>
-				<Stack direction = "row">
-				<CheckboxButton/>
-				<CheckboxDescr>Согласен (-на) с условиями оферты и обработкой персональных данных</CheckboxDescr>
-				</Stack>
+				<BoxPopupDescr><PopupDescr>Мы свяжемся с вами в ближайшее время!</PopupDescr></BoxPopupDescr>
+				<BoxPopupInput><PopupInput placeholder='Телефон' type='tel'/></BoxPopupInput>
+				<CheckboxAgree/>
 				<SendBtn/>
 			</PaperCallback>
 		</CssBaseline> 

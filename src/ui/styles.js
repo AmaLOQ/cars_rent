@@ -54,17 +54,17 @@ const theme = createTheme({
 			fontSize: 14,
 		},
 		subtitle1: {
-			fontSize: 20,
+			fontSize: 24,
+			fontWeight: 700,
 		},
 		subtitle2: {
 			fontSize: 18,
 		},
 		caption: {
-			fontSize: 24,
-			fontWeight: 700,
+			fontSize: 20,
 		},
-		body2: {
-			fontSize: 12
+		body1: {
+			fontSize: 12,
 		}
 	},
 })  

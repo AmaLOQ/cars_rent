@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Radio from '@mui/material/Radio';
+import RadioBtn from './radio-btn-style';
 
 export default function RadioButtons() {
   const [selectedValue, setSelectedValue] = React.useState('a');
@@ -9,7 +9,7 @@ export default function RadioButtons() {
   };
 
   return (
-		<Radio
+		<RadioBtn
 	  	size="small"
         checked={selectedValue === 'a'}
         onChange={handleChange}

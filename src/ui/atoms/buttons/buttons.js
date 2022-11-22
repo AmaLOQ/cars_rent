@@ -35,12 +35,13 @@ const ButtonSend = styled(ButtonIn)`
 	line-height: 140%;
 	color: #fff;
 	font-weight:  ${props => props.theme.typography.fontWeightBold};
-	font-size: 16px;
 	:hover {
 		background-color: ${props => props.theme.palette.primary.main};
 }`;
 
 const ButtonRegPopup = styled(ButtonIn)`
+	display: block;
+	margin: 0 auto;
 	width: 227px;
 	padding: 17px 50px;
 	border-radius: 100px;
@@ -48,12 +49,14 @@ const ButtonRegPopup = styled(ButtonIn)`
 	line-height: 140%;
 	color: #fff;
 	font-weight:  ${props => props.theme.typography.fontWeightMedium};
-	font-size: 16px;
+	font-size: ${props => props.theme.typography.fontSize};
 	:hover {
 		background-color: ${props => props.theme.palette.primary.main};
 }`;
 
 const ButtonRegPopupMob = styled(ButtonIn)`
+	display: block;
+	margin: 0 auto;
 	width: 211px;
 	padding: 12px 50px;
 	border-radius: 100px;
