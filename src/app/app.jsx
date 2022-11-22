@@ -14,7 +14,9 @@ import RangeSlider from "../ui/atoms/slider/slider";
 import RadioButtons from "../ui/atoms/radio-btn/radio-btn";
 import CheckboxBtn from "../ui/atoms/checkbox/checkbox";
 import CustomSwitcher from "../ui/atoms/switcher/switcher-desktop";
-import Calendar from "../ui/atoms/calendar/calendar";
+// import Calendar from "../ui/atoms/calendar/calendar";
+import PositionedMenu from "../ui/molecules/menu-active/menu-active";
+import PopoupCallbackModal from "../ui/organism/callback-popup/callback-popup";
 import { ThemeProvider } from "@emotion/react";
 import theme from "../ui/styles";
 
@@ -32,11 +34,12 @@ function App() {
       <SendMobBtn/>
       <RegPopupBtn/>
       <RegPopupMobBtn/>
-	  <RangeSlider/>
-	  <RadioButtons/>
-	  <CheckboxBtn/>
-	  <CustomSwitcher/>
-	  <Calendar/>
+      <RangeSlider/>
+      <RadioButtons/>
+      <CheckboxBtn/>
+      <CustomSwitcher/>
+      <PositionedMenu/>
+      <PopoupCallbackModal/>
     </ThemeProvider>
   );
 }

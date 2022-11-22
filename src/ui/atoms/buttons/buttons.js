@@ -26,6 +26,8 @@ const ButtonSqr = styled(ButtonIn)`
 }`;
 
 const ButtonSend = styled(ButtonIn)`
+	display: block;
+	margin: 0 auto;
 	width: 267px;
 	padding: 17px 80px;
 	border-radius: 100px;
