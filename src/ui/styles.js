@@ -1,8 +1,9 @@
 import { createTheme } from "@mui/material";
+import { dark } from "@mui/material/styles/createPalette";
 
 
 const COLOR = {
-	black: '#242424',
+	semiBlack: '#242424',
 	btnHover: 'rgba(36, 36, 36, 0.7)',
 	grayLight: '#EFEFEF',
 	gradiendDef: 'linear-gradient(269.87deg, #014369 -17.97%, #289FCA 101.14%)',
@@ -14,7 +15,7 @@ const COLOR = {
 const theme = createTheme({
 	palette: {
 		primary: {
-			main: COLOR.black,
+			main: COLOR.semiBlack,
 			light: COLOR.btnHover,
 		},
 		secondary: {
@@ -60,6 +61,7 @@ const theme = createTheme({
 		},
 		caption: {
 			fontSize: 24,
+			fontWeight: 700,
 		},
 		body2: {
 			fontSize: 12

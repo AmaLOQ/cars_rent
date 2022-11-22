@@ -15,8 +15,8 @@ import RadioButtons from "../ui/atoms/radio-btn/radio-btn";
 import CheckboxBtn from "../ui/atoms/checkbox/checkbox";
 import CustomSwitcher from "../ui/atoms/switcher/switcher-desktop";
 // import Calendar from "../ui/atoms/calendar/calendar";
-import PositionedMenu from "../ui/molecules/menu-active/menu-active";
-import PopoupCallbackModal from "../ui/organism/callback-popup/callback-popup";
+import PositionedMenu from "../ui/atoms/menu-active/menu-active";
+// import PopoupCallbackModal from "../ui/molecules/callback-popup/callback-popup";
 import { ThemeProvider } from "@emotion/react";
 import theme from "../ui/styles";
 
@@ -39,7 +39,7 @@ function App() {
       <CheckboxBtn/>
       <CustomSwitcher/>
       <PositionedMenu/>
-      <PopoupCallbackModal/>
+      {/* <PopoupCallbackModal/> */}
     </ThemeProvider>
   );
 }

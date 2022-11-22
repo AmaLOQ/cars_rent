@@ -6,6 +6,7 @@ import SendBtn from '../../atoms/buttons/send-btn';
 import { CssBaseline,  Stack} from '@mui/material';
 
 export default function PopoupCallbackModal() {
+	// Здесь получить размер окна из wind в useEffect и в моб разрешении устанавливать в use state флаг is mobile
   return (
 	<Overflow>
 		<CssBaseline>

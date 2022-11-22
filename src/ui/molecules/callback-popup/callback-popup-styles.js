@@ -23,8 +23,7 @@ const PaperCallback = styled(Paper)`
 	border-radius: 8px;
 `;
 const PopupTitel = styled(Typography)`
-	font-weight: 700;
-	font-size: ${props => props.theme.typography.caption};
+	font: ${props => props.theme.typography.caption};
 	line-height: 29px;
 	text-align: center;
 `;
