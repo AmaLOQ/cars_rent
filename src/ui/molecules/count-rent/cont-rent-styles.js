@@ -23,7 +23,7 @@ const PriceWrapper = styled(Box)`
 
 const GridRow = styled(Grid)`
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 120px 1fr;
 	grid-template-row: repeat(2, 18px);
 	grid-auto-row: auto;
 	margin-bottom: 20px;
@@ -38,8 +38,10 @@ const GridDays = styled(Typography)`
 `;
 
 const GridPrice = styled(Typography)`
-	grid-row-start: 1;
-	grid-column-end: 3;
+	grid-column: 2 / 3;
+	grid-row: 1 / 3;
+	justify-self: end;
+	margin-right: 15px;
 	font-weight: 700;
 	font-size: 22px;
 	line-height: 140%;
@@ -47,18 +49,14 @@ const GridPrice = styled(Typography)`
 	color: ${props => props.theme.palette.primary.main};
 `;
 
-// const GridPriceDays = styled(Typography)`
-// 	display: inline-block;
-// 	grid-row-start: 1;
-// 	grid-row-end: 3;
-// 	grid-row-start: 1;
-// 	grid-row-end: 3;
-// 	font-weight: 500;
-// 	font-size: 18px;
-// 	line-height: 140%;
-// 	text-transform: uppercase;
-// 	color: ${props => props.theme.palette.primary.main};
-// `;
+const GridPriceDays = styled(Typography)`
+	display: inline-block;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 140%;
+	text-transform: uppercase;
+	color: ${props => props.theme.palette.primary.main};
+`;
 
 const GridPriceDiscount = styled(Box)`
 	display: inline-block;
@@ -82,6 +80,6 @@ export {
 	GridRow,
 	GridDays,
 	GridPrice,
-	// GridPriceDays,
+	GridPriceDays,
 	GridPriceDiscount
 }

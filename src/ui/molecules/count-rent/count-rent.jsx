@@ -7,7 +7,7 @@ import {
 	GridRow,
 	GridDays,
 	GridPrice,
-
+	GridPriceDays,
 	GridPriceDiscount
 } from "./cont-rent-styles";
 
@@ -19,25 +19,25 @@ export default function CountRentCard() {
 			<PriceWrapper>
 				<GridRow>
 					<GridDays>От 4 суток</GridDays>
-					<GridPrice>1805 ₽ </GridPrice>
+					<GridPrice>1805 ₽ /<GridPriceDays>сутки</GridPriceDays></GridPrice>
 					<GridPriceDiscount>-5%</GridPriceDiscount>
 				</GridRow>
 				<Divider sx={{marginBottom: 2.5}}/>
 				<GridRow>
 					<GridDays>От 4 суток</GridDays>
-					<GridPrice>1805 ₽ </GridPrice>
+					<GridPrice>1805 ₽ /<GridPriceDays>сутки</GridPriceDays></GridPrice>
 					<GridPriceDiscount>-5%</GridPriceDiscount>
 				</GridRow>
 				<Divider sx={{marginBottom: 2.5}}/>
 				<GridRow>
 					<GridDays>От 4 суток</GridDays>
-					<GridPrice>1805 ₽ </GridPrice>
+					<GridPrice>1805 ₽ /<GridPriceDays>сутки</GridPriceDays></GridPrice>
 					<GridPriceDiscount>-5%</GridPriceDiscount>
 				</GridRow>
 				<Divider sx={{marginBottom: 2.5}}/>
 				<GridRow>
 					<GridDays>От 4 суток</GridDays>
-					<GridPrice>1805 ₽ </GridPrice>
+					<GridPrice>1805 ₽ /<GridPriceDays>сутки</GridPriceDays></GridPrice>
 					<GridPriceDiscount>-5%</GridPriceDiscount>
 				</GridRow>
 			</PriceWrapper>
