@@ -10,6 +10,7 @@ import TabRightButtton from "../ui/atoms/buttons/tab-right-btn";
 import SendMobBtn from "../ui/atoms/buttons/send-mobile-btn";
 import RegPopupBtn from "../ui/atoms/buttons/registration-popup-btn";
 import RegPopupMobBtn from "../ui/atoms/buttons/registration-popup-mobile-btn";
+import BookBtn from "../ui/atoms/buttons/book-btn";
 import RangeSlider from "../ui/atoms/slider/slider";
 import RadioButtons from "../ui/atoms/radio-btn/radio-btn";
 import CheckboxBtn from "../ui/atoms/checkbox/checkbox";
@@ -19,7 +20,7 @@ import PositionedMenu from "../ui/atoms/menu-active/menu-active";
 // import PopoupCallbackDesk from "../ui/molecules/callback-popup/callback-popup";
 // import PopoupRegistrationDesk from "../ui/molecules/registration-popup/registration-popup";
 // import PopupCallbackMob from "../ui/molecules/callback-popup-mobile/callback-popup-mobile";
-import PopupRegistrationMob from "../ui/molecules/registration-popup-mobile/registration-popup-mobile";
+// import PopupRegistrationMob from "../ui/molecules/registration-popup-mobile/registration-popup-mobile";
 import { ThemeProvider } from "@emotion/react";
 import theme from "../ui/styles";
 
@@ -37,6 +38,7 @@ function App() {
       <SendMobBtn/>
       <RegPopupBtn/>
       <RegPopupMobBtn/>
+      <BookBtn/>
       <RangeSlider/>
       <RadioButtons/>
       <CheckboxBtn/>
@@ -45,7 +47,7 @@ function App() {
       {/* <PopoupRegistrationDesk/> */}
       {/* <PopoupCallbackDesk/> */}
       {/* <PopupCallbackMob/> */}
-      <PopupRegistrationMob/>
+      {/* <PopupRegistrationMob/> */}
     </ThemeProvider>
   );
 }

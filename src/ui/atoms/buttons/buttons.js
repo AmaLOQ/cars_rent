@@ -151,6 +151,21 @@ const TabRightBtn = styled(TabLeftBtn)`
 	left: 32%;
 }`;
 
+const BookButton = styled(ButtonIn)`
+	display: block;
+	margin: 0 auto;
+	width: 320px;
+	padding: 13.8px 115px;
+	border-radius: 100px;
+	line-height: 140%;
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #fff;
+	background: ${props => props.theme.palette.primary.main};
+	:hover {
+		background: ${props => props.theme.palette.primary.light};
+}`;
+
 
 
 
@@ -165,5 +180,6 @@ const TabRightBtn = styled(TabLeftBtn)`
 		TabLeftBtn,
 		TabRightBtn,
 		ButtonRegPopup,
-		ButtonRegPopupMob
+		ButtonRegPopupMob,
+		 BookButton
 	};
