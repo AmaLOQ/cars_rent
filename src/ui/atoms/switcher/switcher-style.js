@@ -2,15 +2,15 @@ import {Switch, styled } from '@mui/material';
 
 const SwitcherStyled = styled(Switch)(({ theme }) => ({
 	width: 45,
-	height: 21,
-	padding: 7,
+	height: 22,
+	padding: 6,
 	'& .MuiSwitch-switchBase': {
 	  margin: 1,
 	  padding: 0,
 	  transform: 'translateX(4px)',
 	  '&.Mui-checked': {
 		color: '#fff',
-		transform: 'translateX(18px)',
+		transform: 'translateX(19px)',
 		'& .MuiSwitch-thumb:before': {
 		  backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="13" width="13" viewBox="0 0 20 20"><path fill="${encodeURIComponent(
 			'#fff',

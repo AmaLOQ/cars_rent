@@ -45,8 +45,6 @@ const ActiveMenuBtn = styled(Button)`
 	padding: 0 3px;
 	:after {
 		content: '';
-		top: 50%;
-		transform: translate(-50%);
 		width: 4px;
 		height: 4px;
 		border: 2px solid;
