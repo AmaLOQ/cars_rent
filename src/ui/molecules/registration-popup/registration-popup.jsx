@@ -13,7 +13,8 @@ import {
 	DataForSingIn, 
 	DataForSingInBox,
 	AutorizationBox,
-	Autorization
+	Autorization,
+
 } from './registration-popup-style';
 import CheckboxAgree from '../checkbox-agree/checkbox-agree';
 import RegPopupBtn from '../../atoms/buttons/registration-popup-btn';
@@ -21,7 +22,7 @@ import SingInSqrBtn from '../../atoms/buttons/sing-in-square-btn';
 import { CssBaseline, Stack } from '@mui/material';
 
 
-export default function PopoupRegistrationkModal() {
+export default function PopoupRegistrationkDesk() {
 	return (
 		<Overflow>
 			<CssBaseline>

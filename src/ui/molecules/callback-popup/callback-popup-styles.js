@@ -23,14 +23,15 @@ const PaperCallback = styled(Paper)`
 	border-radius: 8px;
 `;
 const PopupTitel = styled(Typography)`
-	font: ${props => props.theme.typography.subtitle1};
+	font-size: 24px;
+	font-weight: 700;
 	line-height: 29px;
 	text-align: center;
 `;
 
 
 const PopupDescr = styled(Typography)`
-	font-size: ${props => props.theme.typography.button.fontSize};
+	font-size: 14px;
 	line-height: 140%;
 	text-transform: none;
 	text-align: center;

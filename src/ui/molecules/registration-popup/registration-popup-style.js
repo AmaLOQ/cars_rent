@@ -32,12 +32,14 @@ const RadioDescr = styled(Typography)`
 	line-height: 24px;
 `;
 
-
 const StackStyled = styled(Box)`
 	display: flex;
 	justify-content: space-between;
 	margin-top: 10px;
 `;
+
+
+
 
 //  Заменить стиль фонт вейт!!!!!!
 const DataForSingIn = styled(Typography)`
@@ -74,5 +76,5 @@ export {
 	DataForSingIn,
 	DataForSingInBox,
 	Autorization, 
-	AutorizationBox
+	AutorizationBox,
 }

@@ -16,8 +16,10 @@ import CheckboxBtn from "../ui/atoms/checkbox/checkbox";
 import CustomSwitcher from "../ui/atoms/switcher/switcher-desktop";
 // import Calendar from "../ui/atoms/calendar/calendar";
 import PositionedMenu from "../ui/atoms/menu-active/menu-active";
-// import PopoupCallbackModal from "../ui/molecules/callback-popup/callback-popup";
-import PopoupRegistrationkModal from "../ui/molecules/registration-popup/registration-popup";
+// import PopoupCallbackDesk from "../ui/molecules/callback-popup/callback-popup";
+// import PopoupRegistrationDesk from "../ui/molecules/registration-popup/registration-popup";
+// import PopupCallbackMob from "../ui/molecules/callback-popup-mobile/callback-popup-mobile";
+import PopupRegistrationMob from "../ui/molecules/registration-popup-mobile/registration-popup-mobile";
 import { ThemeProvider } from "@emotion/react";
 import theme from "../ui/styles";
 
@@ -40,8 +42,10 @@ function App() {
       <CheckboxBtn/>
       <CustomSwitcher/>
       <PositionedMenu/>
-      <PopoupRegistrationkModal/>
-      {/* <PopoupCallbackModal/> */}
+      {/* <PopoupRegistrationDesk/> */}
+      {/* <PopoupCallbackDesk/> */}
+      {/* <PopupCallbackMob/> */}
+      <PopupRegistrationMob/>
     </ThemeProvider>
   );
 }
