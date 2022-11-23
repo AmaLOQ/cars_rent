@@ -70,6 +70,8 @@ const ButtonRegPopupMob = styled(ButtonIn)`
 
 
 const ButtonSendMob = styled(ButtonIn)`
+	display: block;
+	margin: 0 auto;
 	width: 253px;
 	padding: 12px 80px;
 	border-radius: 100px;
