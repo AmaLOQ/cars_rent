@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { ActiveMenuBtn, MenuActive, MenuItemActive } from './menu-active-style';
-import useStyles from './menu-active-style';
 
 
 export default function PositionedMenu() {

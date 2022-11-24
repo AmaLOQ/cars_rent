@@ -38,7 +38,7 @@ import {Button, Menu, MenuItem, styled} from "@mui/material";
 
 
 const ActiveMenuBtn = styled(Button)`
-	font-weight: ${props => props.theme.fontWeightMedium};
+	font-weight: 600;
 	font-size: 16px;
 	line-height: 140%;
 	text-transform: none;

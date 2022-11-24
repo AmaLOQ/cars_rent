@@ -3,7 +3,7 @@ import {Switch, styled } from '@mui/material';
 const SwitcherStyled = styled(Switch)(({ theme }) => ({
 	width: 45,
 	height: 22,
-	padding: 6,
+	padding: 5,
 	'& .MuiSwitch-switchBase': {
 	  margin: 1,
 	  padding: 0,
