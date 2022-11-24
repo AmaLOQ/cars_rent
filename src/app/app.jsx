@@ -12,7 +12,6 @@ function App() {
         <CssBaseline>
           <StyledContainer>
             <Header/>
-            {/* <PositionedMenu/> */}
           </StyledContainer>
         </CssBaseline>
       </ThemeProvider>
