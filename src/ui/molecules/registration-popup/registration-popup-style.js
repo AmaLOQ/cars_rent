@@ -4,8 +4,7 @@ const PaperRegistration = styled(Paper)`
 	position: relative;
 	top: 50%;
 	left: 50%;
-	transform: translateY(-50%);
-	transform: translateX(-50%);
+	transform: translate(-50%, -50%);
 	width: 380px;
 	height: 680px;
 	padding: 40px 30px 50px;
@@ -27,8 +26,8 @@ const BoxInputSurname = styled(Box)`
 `;
 
 const RadioDescr = styled(Typography)`
-	font-weight: 400;
-	font-size: 14px;
+	font-weight: ${props => props.theme.typography.fontWeightRegular};
+	font-size: ${props => props.theme.typography.h5.fontSize};
 	line-height: 24px;
 `;
 
@@ -43,7 +42,7 @@ const StackStyled = styled(Box)`
 
 //  Заменить стиль фонт вейт!!!!!!
 const DataForSingIn = styled(Typography)`
-	font-weight: 700; 
+	font-weight: ${props => props.theme.typography.fontWeightBold}; 
 	font-size: ${props => props.theme.typography.body1.fontSize};
 	line-height: 15px;
 `;
@@ -53,8 +52,8 @@ const DataForSingInBox = styled(Box)`
 `;
 
 const Autorization = styled(Box)`
-	font-weight: 400;
-	font-size: 14px;
+	font-weight: ${props => props.theme.typography.fontWeightRegular};
+	font-size: ${props => props.theme.typography.body1.fontSize};
 	text-transform: none;
 `;
 

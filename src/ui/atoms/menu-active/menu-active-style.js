@@ -38,8 +38,8 @@ import {Button, Menu, MenuItem, styled} from "@mui/material";
 
 
 const ActiveMenuBtn = styled(Button)`
-	font-weight: 600;
-	font-size: 16px;
+	font-weight: ${props => props.theme.typography.fontWeight};
+	font-size: ${props => props.theme.typography.h4.fontSize};
 	line-height: 140%;
 	text-transform: none;
 	padding: 0 3px;
@@ -52,6 +52,7 @@ const ActiveMenuBtn = styled(Button)`
 		border-top: none;
 		transform: rotate(45deg);
 		margin-left: 4px;
+		cursor: pointer;
 	}
 `;
 
@@ -62,8 +63,7 @@ const MenuActive = styled(Menu)`
 `;
 
 const MenuItemActive = styled(MenuItem)`
-	font-weight: ${props => props.theme.fontWeightMedium};
-	font-size: 14px;
+	font-weight: ${props => props.theme.typography.fontWeight};
 	line-height: 140%;
 	text-transform: none;
 	padding: 6.5px 13px;

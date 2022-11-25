@@ -1,11 +1,11 @@
 import { Paper, styled, Box, Typography } from "@mui/material";
+import { PopupDescr } from "../callback-popup/callback-popup-styles";
 
 const PaperRegistrationMob = styled(Paper)`
 	position: relative;
 	top: 50%;
 	left: 50%;
-	transform: translateY(-50%);
-	transform: translateX(-50%);
+	transform: translate(-50%, -50%);
 	width: 343px;
 	height: 660px;
 	padding: 40px 21px 40px;
@@ -14,14 +14,18 @@ const PaperRegistrationMob = styled(Paper)`
 	border-radius: 8px;
 `;
 
+const PopupDescrMobile = styled(PopupDescr)`
+	text-align: center;
+`;
+
 const DataForSingInBox = styled(Box)`
 	margin-top: 20px;
 `;
 
 const PopupTitel22 = styled(Box)`
-	font-size: 22px;
+	font-size: ${props => props.theme.typography.body2.fontSize};
 	text-align: center;
-	font-weight: bold;
+	font-weight: ${props => props.theme.typography.fontWeightBold};
 	line-height: 27px;
 `;
 
@@ -37,7 +41,7 @@ const AutorzationBox40 = styled(Box)`
 `;
 
 const Autorzation12 = styled(Typography)`
-	font-size: 12px;
+	font-size: ${props => props.theme.typography.body1.fontSize};
 `;
 
 
@@ -47,5 +51,6 @@ export {
 	PostStateBox,
 	AutorzationBox40,
 	Autorzation12,
-	PopupTitel22
+	PopupTitel22,
+	PopupDescrMobile
 }

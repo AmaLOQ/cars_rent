@@ -1,11 +1,11 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import { Slider } from '@mui/material';
+import SliderRange from './slider-style';
 
 export default function RangeSlider() {
   return (
     <Box width={300}>
-      <Slider size="small" defaultValue={70} aria-label="Small" valueLabelDisplay="auto"/>
+      <SliderRange size="small" defaultValue={70} aria-label="Small" valueLabelDisplay="auto"/>
     </Box>
   );
 }

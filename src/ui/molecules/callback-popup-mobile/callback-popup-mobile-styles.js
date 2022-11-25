@@ -1,12 +1,11 @@
 import { Paper, styled } from "@mui/material";
-
+import { PopupTitel } from "../callback-popup/callback-popup-styles";
 
 const PaperCallbackMob = styled(Paper)`
 	position: relative;
 	top: 50%;
 	left: 50%;
-	transform: translateY(-50%);
-	transform: translateX(-50%);
+	transform: translate(-50%, -50%);
 	width: 343px;
 	height: 356px;
 	padding: 40px 15px 60px;
@@ -15,4 +14,12 @@ const PaperCallbackMob = styled(Paper)`
 	border-radius: 8px;
 `;
 
-export default PaperCallbackMob;
+const PopupTitleMobile = styled(PopupTitel)`
+	font-size: ${props => props.theme.typography.body2.fontSize};
+	line-height: 27px;
+`;
+
+export {
+	PaperCallbackMob,
+	PopupTitleMobile
+}

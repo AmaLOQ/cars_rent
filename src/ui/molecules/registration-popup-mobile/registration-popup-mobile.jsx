@@ -6,9 +6,8 @@ import RadioButtons from '../../atoms/radio-btn/radio-btn';
 import CheckboxAgree from '../checkbox-agree/checkbox-agree';
 import SingInSqrBtn from '../../atoms/buttons/sing-in-square-btn';
 import { Overflow } from '../callback-popup/callback-popup-styles';
-import {PaperRegistrationMob, DataForSingInBox, PostStateBox, AutorzationBox40, Autorzation12, PopupTitel22}  from './registration-popup-mobile-styles';
+import {PaperRegistrationMob, DataForSingInBox, PostStateBox, AutorzationBox40, Autorzation12, PopupTitel22, PopupDescrMobile}  from './registration-popup-mobile-styles';
 import { BoxPopupDescr, 
-		PopupDescr,
 		PopupInput,
 } from '../callback-popup/callback-popup-styles';
 import { BoxInputName, BoxInputSurname, StackStyled, RadioDescr, DataForSingIn} from '../registration-popup/registration-popup-style';
@@ -20,7 +19,7 @@ export default function PopupRegistrationMob() {
 				<PaperRegistrationMob>
 					<Closer/>
 					<PopupTitel22>Регистрация аккаунта</PopupTitel22>
-					<BoxPopupDescr><PopupDescr>Для того, чтобы войти или создать аккаунт</PopupDescr></BoxPopupDescr>
+					<BoxPopupDescr><PopupDescrMobile>Для того, чтобы войти или создать аккаунт</PopupDescrMobile></BoxPopupDescr>
 					<BoxInputName><PopupInput placeholder="Имя" type="text"></PopupInput></BoxInputName>
 					<BoxInputSurname><PopupInput placeholder="Фамилия" type="text"></PopupInput></BoxInputSurname>
 					<StackStyled>

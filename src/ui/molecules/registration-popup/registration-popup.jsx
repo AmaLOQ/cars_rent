@@ -22,7 +22,7 @@ import SingInSqrBtn from '../../atoms/buttons/sing-in-square-btn';
 import { CssBaseline, Stack } from '@mui/material';
 
 
-export default function PopoupRegistrationkDesk() {
+export default function PopupRegistrationkDesk() {
 	return (
 		<Overflow>
 			<CssBaseline>

@@ -6,6 +6,7 @@ const CloserBtn = styled('div')`
 	right: 15px;
 	width: 17px;
 	height: 17px;
+	cursor: pointer;
 	::before, ::after{
 		position: absolute;
 		content: "";

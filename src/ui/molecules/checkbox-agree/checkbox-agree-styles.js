@@ -5,8 +5,8 @@ import { Typography, styled, Box } from "@mui/material";
 const CheckboxDescr = styled(Typography)`
 	width: 232px;
 	margin-left: 12px;
-	font-weight: 400;
-	font: ${props => props.theme.typography.body1};
+	font-weight: ${props => props.theme.typography.fontWeightRegular};
+	font-size: ${props => props.theme.typography.body1.fontSize};
 	line-height: 18px;
 
 `;

@@ -1,5 +1,6 @@
 import { Box, styled } from "@mui/material";
 
+// Что делать с линейным градиентом
 const RingPromo = styled(Box)`
 	display: flex;
 	justify-content: center;
@@ -14,7 +15,7 @@ const RingPromo = styled(Box)`
 const EmptyWhiteRingPromo = styled(Box)`
 	width: 11px;
 	height: 11px;
-	background: #fff;
+	background: ${props => props.theme.palette.white};
 	border-radius: 100%;
 `;
 

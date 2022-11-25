@@ -11,7 +11,7 @@ import {
 	BoxPopupInput,
 	PopupInput
 } from '../callback-popup/callback-popup-styles';
-import PaperCallbackMob from './callback-popup-mobile-styles';
+import {PaperCallbackMob, PopupTitleMobile} from './callback-popup-mobile-styles';
 
 export default function PopupCallbackMob() {
 	return(
@@ -19,7 +19,7 @@ export default function PopupCallbackMob() {
 			<CssBaseline>
 				<PaperCallbackMob>
 					<Closer/>
-					<PopupTitel>Обратный звонок</PopupTitel>
+					<PopupTitleMobile>Обратный звонок</PopupTitleMobile>
 					<BoxPopupDescr><PopupDescr>Мы свяжемся с вами в ближайшее время!</PopupDescr></BoxPopupDescr>
 					<BoxPopupInput><PopupInput placeholder="Телефон" type="tel"></PopupInput></BoxPopupInput>
 					<CheckboxAgree/>
