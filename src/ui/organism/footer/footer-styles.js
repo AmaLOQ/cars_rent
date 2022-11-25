@@ -5,7 +5,7 @@ const FootertWrapperNaw = styled(Box)`
 	justify-content: space-between;
 	align-items: center;
 	minheight: 159px;
-	padding: 47px 0 50px;
+	padding: 47px 0 49px;
 	border-bottom: 1px solid #242424;
 	background: #FFFFFF;
 `;
@@ -45,7 +45,7 @@ const FootertContact = styled(Box)`
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: repeat(2, auto);
-	gap: 9px;
+	gap: 10px;
 `;
 
 const FootertContactCall = styled(FootertNavTopic)`
@@ -58,6 +58,7 @@ const FootertContactPhone = styled(Typography)`
 		line-height: 29px;
 		color: #242424;
 		text-decoration: none;
+		letter-spacing: -0.3px;
 		:hover {
 			text-decoration: underline;
 		}
@@ -69,7 +70,7 @@ const FootertWrapperRights = styled(Box)`
 	justify-content: space-between;
 	align-items: center;
 	minheight: 70px;
-	padding: 23px 0 24px;
+	padding: 23px 0 25px;
 	background: #FFFFFF;
 `;
 
@@ -91,6 +92,7 @@ const FootertWrapperRightsIcoContainer = styled(FootertWrapperRightsFz16)`
 	grid-template-columns: repeat(3, auto);
 	grid-template-rows: auto;
 	column-gap: 15px;
+	align-items: center;
 `;
 
 export {
