@@ -51,6 +51,7 @@ const theme = createTheme({
 		},
 		button: {
 			fontSize: 14,
+			cursor: 'pointer',
 		},
 		subtitle1: {
 			fontSize: 24,

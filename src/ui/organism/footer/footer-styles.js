@@ -5,7 +5,7 @@ const FootertWrapperNaw = styled(Box)`
 	justify-content: space-between;
 	align-items: center;
 	minheight: 159px;
-	padding: 48px 0 50px;
+	padding: 47px 0 50px;
 	border-bottom: 1px solid #242424;
 	background: #FFFFFF;
 `;
@@ -25,7 +25,20 @@ const FootertNavTopic = styled(Typography)`
 	line-height: 20px;
 	color: #242424;
 	text-transform: none;
+	text-decoration: none;
 	align-self: end;
+	a {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: #242424;
+	text-transform: none;
+	text-decoration: none;
+	align-self: end;
+	:hover {
+		text-decoration: underline;
+	}
+	}
 `;
 
 const FootertContact = styled(Box)`
@@ -45,6 +58,9 @@ const FootertContactPhone = styled(Typography)`
 		line-height: 29px;
 		color: #242424;
 		text-decoration: none;
+		:hover {
+			text-decoration: underline;
+		}
 	}
 `;
 
