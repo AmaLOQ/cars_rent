@@ -22,12 +22,12 @@ export default function Footer() {
 		<CssBaseline>
 			<FootertWrapperNaw>
 				<FootertNav>
-					<FootertNavTopic>Аренда Авто</FootertNavTopic>
-					<FootertNavTopic>О нас</FootertNavTopic>
-					<FootertNavTopic>Новости</FootertNavTopic>
-					<FootertNavTopic>Сдать авто</FootertNavTopic>
-					<FootertNavTopic>Контакты</FootertNavTopic>
-					<FootertNavTopic>Отзывы</FootertNavTopic>
+					<FootertNavTopic><a href="#">Аренда Авто</a></FootertNavTopic>
+					<FootertNavTopic><a href="#">О нас</a></FootertNavTopic>
+					<FootertNavTopic><a href="#">Новости</a></FootertNavTopic>
+					<FootertNavTopic><a href="#">Сдать авто</a></FootertNavTopic>
+					<FootertNavTopic><a href="#">Контакты</a></FootertNavTopic>
+					<FootertNavTopic><a href="#">Отзывы</a></FootertNavTopic>
 				</FootertNav>
 				<FootertContact>
 					<FootertContactCall>Связаться с нами</FootertContactCall>
