@@ -47,7 +47,7 @@ const ActiveMenuBtn = styled(Button)`
 		content: '';
 		width: 4px;
 		height: 4px;
-		border: 2px solid;
+		border: 2px solid  ${props => props.theme.palette.primary.main};
 		border-left: none;
 		border-top: none;
 		transform: rotate(45deg);
