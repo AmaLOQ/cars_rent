@@ -10,8 +10,8 @@ const PromoWrapper = styled(Box)`
 
 const PromoTitle = styled(Typography)`
 	align-self: end;
-	font-weight: 800;
-	font-size: 54px;
+	font-weight: ${props => props.theme.typography.fontWeightExtraBold};
+	font-size: ${props => props.theme.typography.h1.fontSize};
 	line-height: 140%;
 	color: ${props => props.theme.palette.primary.main};
 	text-transform: uppercase;
@@ -36,8 +36,8 @@ const PromoRing = styled(Box)`
 const PromoDescr = styled(Typography)`
 	align-self: start;
 	margin-top: 19px;
-	font-weight: 400;
-	font-size: 20px;
+	font-weight: ${props => props.theme.typography.fontWeightRegular};
+	font-size: ${props => props.theme.typography.caption.fontSize};
 	line-height: 140%;
 	color: ${props => props.theme.palette.primary.main};
 	text-transform: none;

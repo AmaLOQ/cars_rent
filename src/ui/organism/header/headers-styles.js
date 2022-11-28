@@ -4,7 +4,7 @@ const HeaderWrapper = styled(Box)`
 	display: flex;
 	justify-content: space-between;
 	min-height: 72px;
-	border-bottom: 1px solid #242424;
+	border-bottom: 1px solid ${props => props.theme.palette.primary.main};
 `;
 
 const GridContainerNaw = styled(Box)`
@@ -24,8 +24,8 @@ const GridContainerButtons = styled(Box)`
 
 
 const HeaderTextStyle = styled(Typography)`
-	font-weight: 600;
-	font-size: 16px;
+	font-weight: ${props => props.theme.typography.fontWeight};
+	font-size: ${props => props.theme.typography.h4.fontSize};
 	line-height: 140%;
 `;
 
@@ -45,6 +45,6 @@ export {
 	GridContainerNaw,
 	GridContainerButtons,
 	HeaderTextStyle,
- 	SwitcherWrapper,
+	SwitcherWrapper,
 	HeaderLogo,
 }

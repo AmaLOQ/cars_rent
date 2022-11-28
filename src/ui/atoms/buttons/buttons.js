@@ -14,7 +14,7 @@ const ButtonIn = styled(Button)`
 
 const ButtonSqr = styled(ButtonIn)`
 	width: 100px;
-	border: 1px solid #000000;
+	border: 1px solid ${props => props.theme.palette.white};
 	border-radius: 4px;
 	box-shadow: none;
 	text-transform: lowercase;
@@ -136,7 +136,7 @@ const TabRightBtn = styled(TabLeftBtn)`
 	::before {
 	border-left: none;
 	border-bottom: none;
-	border-right: 1.5px solid #FFFFFF;
+	border-right: 1.5px solid ${props => props.theme.palette.white};
 	transform: rotate(45deg);
 	left: 32%;
 }`;
