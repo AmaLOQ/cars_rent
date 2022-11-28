@@ -1,9 +1,7 @@
 import * as React from 'react';
 import { ActiveMenuBtn, MenuActive, MenuItemActive } from './menu-active-style';
-import useStyles from './menu-active-style';
 
-
-export default function PositionedMenu() {
+export const PositionedMenu = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -12,7 +10,6 @@ export default function PositionedMenu() {
   const handleClose = () => {
     setAnchorEl(null);
   };
-//   const classes = useStyles();
 
   return (
     <div>

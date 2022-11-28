@@ -3,6 +3,7 @@ import { CssBaseline } from '@mui/material';
 import Closer from '../../atoms/closer/closer';
 import CheckboxAgree from '../checkbox-agree/checkbox-agree';
 import SendMobBtn from '../../atoms/buttons/send-mobile-btn';
+import PaperCallbackMob from './callback-popup-mobile-styles';
 import { 
 	Overflow, 
 	PopupTitel, 
@@ -11,9 +12,8 @@ import {
 	BoxPopupInput,
 	PopupInput
 } from '../callback-popup/callback-popup-styles';
-import PaperCallbackMob from './callback-popup-mobile-styles';
 
-export default function PopupCallbackMob() {
+export const PopupCallbackMob = () => {
 	return(
 		<Overflow>
 			<CssBaseline>

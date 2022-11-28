@@ -3,6 +3,4 @@ import BtnCheckbox from './checkbox-style';
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
-export default function CheckboxButton() {
-	return <BtnCheckbox {...label} defaultChecked size='small'/>;
-}
+export const CheckboxBtn = () => <BtnCheckbox {...label} defaultChecked size='small'/>

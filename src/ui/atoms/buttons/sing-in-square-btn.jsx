@@ -1,7 +1,6 @@
 import React from "react";
 import { ButtonSqr } from "./buttons";
 
-export default function SingInSqrBtn(){
-	return <ButtonSqr variant="contained">войти</ButtonSqr>
-}
+export const SingInSqrBtn = () => <ButtonSqr variant="contained">войти</ButtonSqr>
+
 

@@ -1,16 +1,15 @@
 import * as React from 'react';
 import RadioBtn from './radio-btn-style';
 
-export default function RadioButtons() {
+export const RadioButtons = () => {
   const [selectedValue, setSelectedValue] = React.useState('a');
-
   const handleChange = (event) => {
     setSelectedValue(event.target.value);
   };
 
   return (
 		<RadioBtn
-	  	size="small"
+	  	  size="small"
         checked={selectedValue === 'a'}
         onChange={handleChange}
         value="a"

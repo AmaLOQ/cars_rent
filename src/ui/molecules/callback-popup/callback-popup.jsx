@@ -5,8 +5,7 @@ import SendBtn from '../../atoms/buttons/send-btn';
 import CheckboxAgree from '../checkbox-agree/checkbox-agree';
 import { CssBaseline } from '@mui/material';
 
-export default function PopoupCallbackDesk() {
-	// Здесь получить размер окна из wind в useEffect и в моб разрешении устанавливать в use state флаг is mobile
+export const PopoupCallbackDesk = () => {
   return (
 	<Overflow>
 		<CssBaseline>

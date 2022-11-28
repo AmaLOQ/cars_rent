@@ -7,13 +7,10 @@ import CheckboxAgree from '../checkbox-agree/checkbox-agree';
 import SingInSqrBtn from '../../atoms/buttons/sing-in-square-btn';
 import { Overflow } from '../callback-popup/callback-popup-styles';
 import {PaperRegistrationMob, DataForSingInBox, PostStateBox, AutorzationBox40, Autorzation12, PopupTitel22}  from './registration-popup-mobile-styles';
-import { BoxPopupDescr, 
-		PopupDescr,
-		PopupInput,
-} from '../callback-popup/callback-popup-styles';
 import { BoxInputName, BoxInputSurname, StackStyled, RadioDescr, DataForSingIn} from '../registration-popup/registration-popup-style';
+import { BoxPopupDescr, PopupDescr,PopupInput } from '../callback-popup/callback-popup-styles';
 
-export default function PopupRegistrationMob() {
+export const PopupRegistrationMob = () => {
 	return(	
 		<Overflow>
 			<CssBaseline>

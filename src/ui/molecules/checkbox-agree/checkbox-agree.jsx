@@ -1,11 +1,8 @@
 import React from "react";
-
 import CheckboxButton from "../../atoms/checkbox/checkbox";
 import {CheckboxDescr, BoxCheckbox} from "./checkbox-agree-styles";
 
-
-
-export default function CheckboxAgree() {
+export const CheckboxAgree = () => {
 	return(
 		<BoxCheckbox>
 			<CheckboxButton/>

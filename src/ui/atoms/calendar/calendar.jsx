@@ -4,7 +4,7 @@ import  LocalizationProvider  from '@mui/x-date-pickers/LocalizationProvider';
 import  AdapterDayjs  from '@mui/x-date-pickers/AdapterDayjs';
 import  DesktopDatePicker  from '@mui/x-date-pickers/DesktopDatePicker';
 
-export default function Calendar() {
+export const Calendar = () => {
   const [value, setValue] = React.useState(new Date());
 
   const handleChange = (newValue) => {

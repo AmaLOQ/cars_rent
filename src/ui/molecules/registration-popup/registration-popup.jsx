@@ -3,6 +3,10 @@ import * as React from 'react';
 import { Overflow, PopupTitel, PopupDescr, PopupInput } from '../callback-popup/callback-popup-styles';
 import Closer from '../../atoms/closer/closer';
 import RadioButtons from '../../atoms/radio-btn/radio-btn';
+import CheckboxAgree from '../checkbox-agree/checkbox-agree';
+import RegPopupBtn from '../../atoms/buttons/registration-popup-btn';
+import SingInSqrBtn from '../../atoms/buttons/sing-in-square-btn';
+import { CssBaseline, Stack } from '@mui/material';
 import {
 	PaperRegistration, 
 	BoxPopupDescr, 
@@ -14,15 +18,9 @@ import {
 	DataForSingInBox,
 	AutorizationBox,
 	Autorization,
-
 } from './registration-popup-style';
-import CheckboxAgree from '../checkbox-agree/checkbox-agree';
-import RegPopupBtn from '../../atoms/buttons/registration-popup-btn';
-import SingInSqrBtn from '../../atoms/buttons/sing-in-square-btn';
-import { CssBaseline, Stack } from '@mui/material';
 
-
-export default function PopoupRegistrationkDesk() {
+export const PopoupRegistrationkDesk = () => {
 	return (
 		<Overflow>
 			<CssBaseline>
