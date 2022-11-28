@@ -38,9 +38,9 @@ export default function Footer() {
 					<FootertWrapperRightsFz16>© 2022 ООО «RENT AVTO»</FootertWrapperRightsFz16>
 					<FootertWrapperRightsFz14>Авторские права © 2022 все права защищены.</FootertWrapperRightsFz14>
 					<FootertWrapperRightsIcoContainer>
-						<Box><img src={telegram} alt="Телеграм"/></Box>
-						<Box><img src={viber} alt="Вибер"/></Box>
-						<Box><img src={mail} alt="Майл"/></Box>
+						<Box><a href="#"><img src={telegram} alt="Телеграм"/></a></Box>
+						<Box><a href="#"><img src={viber} alt="Вибер"/></a></Box>
+						<Box><a href="#"><img src={mail} alt="Майл"/></a></Box>
 					</FootertWrapperRightsIcoContainer>
 				</FootertWrapperRights>
 		</CssBaseline>
