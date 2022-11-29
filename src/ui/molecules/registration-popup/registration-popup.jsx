@@ -1,12 +1,12 @@
 
 import * as React from 'react';
-import { Overflow, PopupTitel, PopupDescr, PopupInput } from '../callback-popup/callback-popup-styles';
-import Closer from '../../atoms/closer/closer';
-import RadioButtons from '../../atoms/radio-btn/radio-btn';
-import CheckboxAgree from '../checkbox-agree/checkbox-agree';
-import RegPopupBtn from '../../atoms/buttons/registration-popup-btn';
-import SingInSqrBtn from '../../atoms/buttons/sing-in-square-btn';
-import { CssBaseline, Stack } from '@mui/material';
+import { Overflow, PopupTitle, PopupDescr, PopupInput } from '../callback-popup/callback-popup-styles';
+import {RadioButtons} from '../../atoms/radio-btn/radio-btn';
+import {CheckboxAgree} from '../checkbox-agree/checkbox-agree';
+import { Stack } from '@mui/material';
+import { ButtonSqr } from '../../atoms/buttons/buttons';
+import { ButtonBlack, ButtonBlackWrapper } from '../../atoms/buttons/buttons';
+import {theme} from '../../styles';
 import {
 	PaperRegistration, 
 	BoxPopupDescr, 
@@ -17,40 +17,36 @@ import {
 	DataForSingIn, 
 	DataForSingInBox,
 	AutorizationBox,
-	Autorization,
-} from './registration-popup-style';
+	Autorization, } from './registration-popup-style';
 
-export const PopoupRegistrationkDesk = () => {
+export const PopupRegistrationkDesk = () => {
 	return (
 		<Overflow>
-			<CssBaseline>
-				<PaperRegistration>
-					<Closer/>
-					<PopupTitel>Регистрация аккаунта</PopupTitel>
-					<BoxPopupDescr><PopupDescr>Для того, чтобы войти или создать аккаунт</PopupDescr></BoxPopupDescr>
-					<BoxInputName><PopupInput placeholder="Имя"/></BoxInputName>
-					<BoxInputSurname><PopupInput placeholder="Имя"/></BoxInputSurname>
-					<StackStyled>
-						<Stack direction="row">
-							<RadioButtons/>
-							<RadioDescr>Легковые авто</RadioDescr>
-						</Stack>
-						<Stack direction="row">
-							<RadioButtons/>
-							<RadioDescr>Грузовые авто</RadioDescr>
-						</Stack>
-					</StackStyled>
-					<DataForSingInBox><DataForSingIn>данные для входа в сервис</DataForSingIn></DataForSingInBox>
-					<BoxInputSurname><PopupInput placeholder="Почта"/></BoxInputSurname>
-					<BoxInputSurname><PopupInput placeholder="Пароль"/></BoxInputSurname>
-					<CheckboxAgree/>
-					<RegPopupBtn/>
-					<AutorizationBox>
-						<Autorization>Авторизация на RENT AUTO</Autorization>
-						<SingInSqrBtn/>
-					</AutorizationBox>
-				</PaperRegistration>
-			</CssBaseline>
+			<PaperRegistration>
+				<PopupTitle>Регистрация аккаунта</PopupTitle>
+				<BoxPopupDescr><PopupDescr>Для того, чтобы войти или создать аккаунт</PopupDescr></BoxPopupDescr>
+				<BoxInputName><PopupInput placeholder="Имя"/></BoxInputName>
+				<BoxInputSurname><PopupInput placeholder="Фамилия"/></BoxInputSurname>
+				<StackStyled>
+					<Stack direction="row">
+						<RadioButtons/>
+						<RadioDescr>Легковые авто</RadioDescr>
+					</Stack>
+					<Stack direction="row">
+						<RadioButtons/>
+						<RadioDescr>Грузовые авто</RadioDescr>
+					</Stack>
+				</StackStyled>
+				<DataForSingInBox><DataForSingIn>данные для входа в сервис</DataForSingIn></DataForSingInBox>
+				<BoxInputSurname><PopupInput placeholder="Почта"/></BoxInputSurname>
+				<BoxInputSurname><PopupInput placeholder="Пароль"/></BoxInputSurname>
+				<CheckboxAgree/>
+				<ButtonBlackWrapper><ButtonBlack blackBtn={theme.blackBtn}>Регистрация</ButtonBlack></ButtonBlackWrapper>
+				<AutorizationBox>
+					<Autorization>Авторизация на RENT AUTO</Autorization>
+					<ButtonSqr>Войти</ButtonSqr>
+				</AutorizationBox>
+			</PaperRegistration>
 		</Overflow>
 	)
 }

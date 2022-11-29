@@ -1,4 +1,4 @@
 import React from "react";
-import CloserBtn from "./closer-styles";
+import { CloserStyle } from "./closer-style";
 
-export const Closer = () => <CloserBtn/>
+export const Closer = () => <CloserStyle/>

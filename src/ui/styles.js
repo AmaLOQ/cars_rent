@@ -12,7 +12,7 @@ const COLOR = {
 	redLight: '#FFC5C5',
 }
 
-const theme = createTheme({
+export const theme = createTheme({
 	palette: {
 		primary: {
 			main: COLOR.semiBlack,
@@ -26,47 +26,58 @@ const theme = createTheme({
 			main: COLOR.redLight
 		},
 		white: '#fff',
-
+	},
+	blackBtn: {
+		fontSize: '16px',
+		padding: '17px 50px',
+		textTransform: 'uppercase',
+	},
+	gradientBtn: {
+		fontSize: '14px',
+		padding: '7.7px 57.7px',
+		textTransform: 'capitalize',
 	},
 	typography: {
 		fontFamily: 'Montserrat',
 		fontSize: 16,
+		fontWeight: 600,
 		fontWeightLight: 300,
 		fontWeightRegular: 400,
 		fontWeightMedium: 500,
 		fontWeightBold: 700,
 		h1: {
-			fontSize: 54,
+			fontSize: '54px',
 		},
 		h2: {
-			fontSize: 40,
+			fontSize: '40px',
 		},
 		h3: {
-			fontSize: 18,
+			fontSize: '18px',
 		},
 		h4: {
-			fontSize16: 16,
+			fontSize: '16px',
 		},
 		h5: {
-			fontSize: 14,
+			fontSize: '14px',
 		},
 		button: {
-			fontSize: 14,
+			fontSize: '14px',
 		},
 		subtitle1: {
-			fontSize: 24,
 			fontWeight: 700,
+			fontSize: '24px',
 		},
 		subtitle2: {
-			fontSize: 18,
+			fontSize: '18px',
 		},
 		caption: {
-			fontSize: 20,
+			fontSize: '20px',
 		},
 		body1: {
-			fontSize: 12,
+			fontSize: '12px',
+		},
+		body2 :{
+			fontSize: '22px',
 		}
 	},
-})  
-
-export default theme;
+})

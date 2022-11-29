@@ -1,80 +1,55 @@
-import {styled, Paper, Box, Typography,} from "@mui/material";
+import {styled, Box, Typography,} from "@mui/material";
+import { PaperCallback } from "../callback-popup/callback-popup-styles";
 
-const PaperRegistration = styled(Paper)`
-	position: relative;
-	top: 50%;
-	left: 50%;
-	transform: translateY(-50%);
-	transform: translateX(-50%);
+export const PaperRegistration = styled(PaperCallback)`
 	width: 380px;
 	height: 680px;
 	padding: 40px 30px 50px;
-	background: ${props => props.theme.palette.white};
-	box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
-	border-radius: 8px;
 `;
 
-const BoxPopupDescr = styled(Box)`
+export const BoxPopupDescr = styled(Box)`
 	margin-top: 20px;
 `;
 
-const BoxInputName = styled(Box)`
+export const BoxInputName = styled(Box)`
 	margin-top: 20px;
 `;
 
-const BoxInputSurname = styled(Box)`
+export const BoxInputSurname = styled(Box)`
 	margin-top: 12px;
 `;
 
-const RadioDescr = styled(Typography)`
-	font-weight: 400;
-	font-size: 14px;
+export const RadioDescr = styled(Typography)`
 	line-height: 24px;
+	font-weight: ${props => props.theme.typography.fontWeightRegular};
+	font-size: ${props => props.theme.typography.h5.fontSize};
 `;
 
-const StackStyled = styled(Box)`
+export const StackStyled = styled(Box)`
+	margin-top: 10px;
 	display: flex;
 	justify-content: space-between;
-	margin-top: 10px;
 `;
 
-
-
-
-//  Заменить стиль фонт вейт!!!!!!
-const DataForSingIn = styled(Typography)`
-	font-weight: 700; 
-	font-size: ${props => props.theme.typography.body1.fontSize};
+export const DataForSingIn = styled(Typography)`
 	line-height: 15px;
+	font-weight: ${props => props.theme.typography.fontWeightBold};
+	font-size: ${props => props.theme.typography.body1.fontSize};
 `;
 
-const DataForSingInBox = styled(Box)`
+export const DataForSingInBox = styled(Box)`
 	margin-top: 40px;
 `;
 
-const Autorization = styled(Box)`
-	font-weight: 400;
-	font-size: 14px;
+export const Autorization = styled(Box)`
+	font-weight: ${props => props.theme.typography.fontWeightRegular};
+	font-size: ${props => props.theme.typography.h5.fontSize};
 	text-transform: none;
 `;
 
-const AutorizationBox = styled(Box)`
+export const AutorizationBox = styled(Box)`
 	display: flex;
 	margin-top: 30px;
 	justify-content: space-between;
 	align-items: center;
 `;
-
-
-export {
-	BoxPopupDescr,
-	PaperRegistration,
-	BoxInputName,
-	BoxInputSurname,
-	RadioDescr, 
-	StackStyled,
-	DataForSingIn,
-	DataForSingInBox,
-	Autorization, 
-	AutorizationBox,
-}

@@ -37,9 +37,9 @@ export const PositionedMenu = () => {
           horizontal: 'left',
         }}
       >
-        <MenuItemActive onClick={handleClose}>Аренда авто</MenuItemActive>
-        <MenuItemActive onClick={handleClose}>Условия</MenuItemActive>
-        <MenuItemActive onClick={handleClose}>Цены</MenuItemActive>
+        <MenuItemActive onClick={handleClose}><a href="#">Аренда авто</a></MenuItemActive>
+        <MenuItemActive onClick={handleClose}><a href="#">Условия</a></MenuItemActive>
+        <MenuItemActive onClick={handleClose}><a href="#">Цены</a></MenuItemActive>
       </MenuActive>
     </div>
   );

@@ -1,22 +1,14 @@
 import { Typography, styled, Box } from "@mui/material";
 
-
-// Замменить стили фонт вейт
-const CheckboxDescr = styled(Typography)`
+export const CheckboxDescr = styled(Typography)`
 	width: 232px;
 	margin-left: 12px;
-	font-weight: 400;
-	font: ${props => props.theme.typography.body1};
 	line-height: 18px;
-
+	font-weight: ${props => props.theme.typography.fontWeightRegular};
+	font-size: ${props => props.theme.typography.body1.fontSize};
 `;
 
-const BoxCheckbox = styled(Box)`
+export const BoxCheckbox = styled(Box)`
 	display: flex;
 	margin: 15px 0 30px;
 `;
-
-export {
-	CheckboxDescr,
-	BoxCheckbox
-}

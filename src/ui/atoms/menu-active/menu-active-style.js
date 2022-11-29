@@ -1,76 +1,39 @@
 import {Button, Menu, MenuItem, styled} from "@mui/material";
 
-
-// const PREFIX = 'Menu';
-
-// const classes = {
-// 	root: `${PREFIX}-root`,
-// 	cta: `${PREFIX}-cta`,
-// 	content: `${PREFIX}-content`,
-// }
-
-// const MenuActive = styled(Menu)(({theme}) => ({
-// 	[`&.${classes.root}`]: {
-// 		display: 'flex',
-// 		alignItems: 'center',
-// 		backgroundColor: theme.palette.primary.main
-// 	},
-// 	[`& .${classes.cta}`]: {
-// 		borderRadius: theme.shape.radius
-// 	},
-// 	[`& .${classes.content}`]: {
-// 		color: theme.palette.common.white,
-// 		fontSize: 16,
-// 		lineHeight: 1.7
-// 	},
-// }))
-
-// export default MenuActive;
-
-
-// const useStyles = makeStyles((theme) => ({
-// 	memu: {
-// 		padding: '9px 13px',
-// 		boxShadow: '0px 4px 18px rgba(0, 0, 0, 0.15)',
-// 		borderRadius: '10px',
-// 	}
-// }))
-
-
-const ActiveMenuBtn = styled(Button)`
-	font-weight: ${props => props.theme.fontWeightMedium};
-	font-size: 16px;
+export const ActiveMenuBtn = styled(Button)`
+	font-weight: ${props => props.theme.typography.fontWeight};
+	font-size: ${props => props.theme.typography.h4.fontSize};
 	line-height: 140%;
 	text-transform: none;
 	padding: 0 3px;
+	color: ${props => props.theme.palette.primary.main};
 	:after {
 		content: '';
+		margin-left: 4px;
+		transform: rotate(45deg);
 		width: 4px;
 		height: 4px;
 		border: 2px solid;
 		border-left: none;
 		border-top: none;
-		transform: rotate(45deg);
-		margin-left: 4px;
+		border-color: ${props => props.theme.palette.primary.main};
 	}
 `;
 
-const MenuActive = styled(Menu)`
-	width: 120px;
+export const MenuActive = styled(Menu)`
+	width: 150px;
 	border-radius: 10px;
 	padding: 9px 15px;
 `;
 
-const MenuItemActive = styled(MenuItem)`
-	font-weight: ${props => props.theme.fontWeightMedium};
-	font-size: 14px;
-	line-height: 140%;
-	text-transform: none;
+export const MenuItemActive = styled(MenuItem)`
 	padding: 6.5px 13px;
+	line-height: 140%;
+	font-weight: ${props => props.theme.typography.fontWeight};
+	font-size: ${props => props.theme.typography.h5.fontSize};
+	text-transform: none;
+	a {
+		color: ${props => props.theme.palette.primary.main};
+		text-decoration: none;
+	}
 `;
-
-export {
-	ActiveMenuBtn,
-	MenuActive, 
-	MenuItemActive
-}
