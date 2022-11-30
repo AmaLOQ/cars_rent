@@ -1,5 +1,5 @@
 import {styled, Box, Typography,} from "@mui/material";
-import { PaperCallback } from "../callback-popup/callback-popup-styles";
+import { PaperCallback } from "../../organisms/callback-popup/callback-popup-styles";
 
 export const PaperRegistration = styled(PaperCallback)`
 	width: 380px;
@@ -19,18 +19,6 @@ export const BoxInputSurname = styled(Box)`
 	margin-top: 12px;
 `;
 
-export const RadioDescr = styled(Typography)`
-	line-height: 24px;
-	font-weight: ${props => props.theme.typography.fontWeightRegular};
-	font-size: ${props => props.theme.typography.h5.fontSize};
-`;
-
-export const StackStyled = styled(Box)`
-	margin-top: 10px;
-	display: flex;
-	justify-content: space-between;
-`;
-
 export const DataForSingIn = styled(Typography)`
 	line-height: 15px;
 	font-weight: ${props => props.theme.typography.fontWeightBold};
@@ -38,7 +26,7 @@ export const DataForSingIn = styled(Typography)`
 `;
 
 export const DataForSingInBox = styled(Box)`
-	margin-top: 40px;
+	margin-top: 27px;
 `;
 
 export const Autorization = styled(Box)`

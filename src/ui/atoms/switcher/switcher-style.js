@@ -1,5 +1,5 @@
 import {Switch, styled } from '@mui/material';
-import moon from '../../ico/moon.svg'
+
 
 export const SwitcherStyled = styled(Switch)(({ theme }) => ({
 		width: 45,
@@ -13,7 +13,7 @@ export const SwitcherStyled = styled(Switch)(({ theme }) => ({
 			color: '#fff',
 			transform: 'translateX(19px)',
 			'& .MuiSwitch-thumb:before': {
-				backgroundImage: {moon},
+				backgroundImage: 'fff',
 			'& + .MuiSwitch-track': {
 				opacity: 0.5,
 				backgroundColor: theme.palette.mode === 'dark' ? '#242424' : '#242424',

@@ -1,4 +1,4 @@
-import { styled, Typography, Input, Box, IconButton } from '@mui/material';
+import { styled, Typography, Input, Box, IconButton} from '@mui/material';
 import Paper from '@mui/material/Paper';
 
 export const Overflow = styled('div')`
@@ -52,6 +52,12 @@ export const PopupInput = styled(Input)`
 export const BoxPopupInput = styled(Box)`
 	margin-top: 25px;
 	margin-bottom: 15px;
+`;
+
+export const StyledIconButton = styled(IconButton)`
+	position: absolute;
+	top: 7px;
+	right: 7px;
 `;
 
 

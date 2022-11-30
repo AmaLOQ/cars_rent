@@ -1,11 +1,14 @@
-import {Radio, styled} from '@mui/material/';
+import {FormControlLabel, styled} from '@mui/material/';
 
-export const RadioBtn = styled(Radio)`
-	display: flex;
-	margin-right: 10.5px;
-	width: 20.5px;
-	height: 20.5px;
-	align-self: center;
-	color: ${props => props.theme.palette.primary.main};
+export const RadioBtn = styled(FormControlLabel)`
+	margin: 0;
+	margin-left: -5px;
+	span {
+		line-height: 24px;
+		font-weight: ${props => props.theme.typography.fontWeightRegular};
+		font-size: ${props => props.theme.typography.h5.fontSize};
+		color: ${props => props.theme.palette.primary.main};
+	}
+
 `;
 
