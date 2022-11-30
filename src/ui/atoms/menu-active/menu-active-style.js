@@ -7,16 +7,9 @@ export const ActiveMenuBtn = styled(Button)`
 	text-transform: none;
 	padding: 0 3px;
 	color: ${props => props.theme.palette.primary.main};
-	:after {
-		content: '';
-		margin-left: 4px;
-		transform: rotate(45deg);
-		width: 4px;
-		height: 4px;
-		border: 2px solid;
-		border-left: none;
-		border-top: none;
-		border-color: ${props => props.theme.palette.primary.main};
+	span {
+		margin-left: 0px;
+		color: ${props => props.theme.palette.primary.main};
 	}
 `;
 

@@ -17,7 +17,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline>
-        {/* <PositionedMenu /> */}
+        <PositionedMenu />
         <CustomSwitcher />
         {/* <PopoupCallbackDesk/> */}
         {/* <PopupCallbackMob/> */}

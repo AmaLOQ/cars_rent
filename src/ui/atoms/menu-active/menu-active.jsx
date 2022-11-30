@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { ActiveMenuBtn, MenuActive, MenuItemActive } from './menu-active-style';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 export const PositionedMenu = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -19,6 +20,7 @@ export const PositionedMenu = () => {
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
+        endIcon={<KeyboardArrowDownIcon/>}
       >
         Аренда авто
       </ActiveMenuBtn>

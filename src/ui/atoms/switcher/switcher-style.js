@@ -1,6 +1,5 @@
 import {Switch, styled } from '@mui/material';
 
-
 export const SwitcherStyled = styled(Switch)(({ theme }) => ({
 		width: 45,
 		height: 22,
@@ -13,7 +12,10 @@ export const SwitcherStyled = styled(Switch)(({ theme }) => ({
 			color: '#fff',
 			transform: 'translateX(19px)',
 			'& .MuiSwitch-thumb:before': {
-				backgroundImage: 'fff',
+				backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="12" width="12" viewBox="0 0 20 20"><path fill="${encodeURIComponent(
+					'#fff',
+				  )}" d="M4.2 2.5l-.7 1.8-1.8.7 1.8.7.7 1.8.6-1.8L6.7 5l-1.9-.7-.6-1.8zm15 8.3a6.7 6.7 0 11-6.6-6.6 5.8 5.8 0 006.6 6.6z"/></svg>')`,
+				},
 			'& + .MuiSwitch-track': {
 				opacity: 0.5,
 				backgroundColor: theme.palette.mode === 'dark' ? '#242424' : '#242424',
@@ -45,4 +47,4 @@ export const SwitcherStyled = styled(Switch)(({ theme }) => ({
 			borderRadius: 20 / 2,
 		},
 	}
-}));
+));

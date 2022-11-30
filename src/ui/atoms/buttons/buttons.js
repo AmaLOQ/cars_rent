@@ -32,8 +32,6 @@ export const ButtonGradient = styled(Button)`
 		color: ${props => props.theme.palette.white};
 }`;
 
-
-
 export const ButtonSqr = styled(ButtonBlack)`
 	border: 1px solid ${props => props.theme.palette.primary.main};;
 	border-radius: 4px;
@@ -45,8 +43,6 @@ export const ButtonSqr = styled(ButtonBlack)`
 		background: ${props => props.theme.palette.primary.main};
 		color: ${props => props.theme.palette.white};
 }`;
-
-
 
 export const TabLeftBtn = styled('div')`
 	position: relative;

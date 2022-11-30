@@ -9,6 +9,7 @@ export const Overflow = styled('div')`
 	height: 100vh;
 	background: rgba(36, 36, 36, 0.4);
 `;
+
 export const PaperCallback = styled(Paper)`
 	position: relative;
 	top: 50%;
@@ -21,13 +22,13 @@ export const PaperCallback = styled(Paper)`
 	border-radius: 8px;
 	background: ${props => props.theme.palette.white};
 `;
+
 export const PopupTitle = styled(Typography)`
 	line-height: 29px;
 	text-align: center;
 	font-size: ${props => props.theme.typography.subtitle1.fontSize};
 	font-weight: ${props => props.theme.typography.subtitle1.fontWeight};
 `;
-
 
 export const PopupDescr = styled(Typography)`
 	line-height: 140%;
@@ -49,6 +50,7 @@ export const PopupInput = styled(Input)`
 	font-weight: ${props => props.theme.typography.fontWeightRegular};
 	font-size: ${props => props.theme.typography.h5.fontSize};
 `;
+
 export const BoxPopupInput = styled(Box)`
 	margin-top: 25px;
 	margin-bottom: 15px;

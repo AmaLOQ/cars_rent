@@ -7,7 +7,6 @@ export const PaperRegistrationMob = styled(PaperCallback)`
 	padding: 40px 21px 40px;
 `;
 
-
 export const DataForSingInBox = styled(Box)`
 	margin-top: 7px;
 `;
