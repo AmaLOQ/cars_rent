@@ -1,11 +1,12 @@
 import * as React from 'react';
 import {PaperCallbackMob} from './callback-popup-mobile-styles';
-import { CheckboxAgree } from '../../molecules/checkbox-agree/checkbox-agree';
-import { ButtonBlack, ButtonBlackWrapper } from '../../atoms/buttons/buttons';
-import {theme} from '../../styles';
-import { Overflow, PopupTitle, PopupDescr, BoxPopupDescr,BoxPopupInput,PopupInput } from '../callback-popup/callback-popup-styles';
+import { CheckboxButton } from '../../atoms/checkbox/checkbox';
+import { ButtonBlackWrapper } from '../../atoms/buttons/buttons';
+import { Overflow, PopupTitle, PopupDescr, BoxPopupDescr, BoxPopupInput, CheckboxWrapper} from '../callback-popup/callback-popup-styles';
 import { StyledIconButton } from '../callback-popup/callback-popup-styles';
 import CloseIcon from '@mui/icons-material/Close';
+import { ButtonBlack } from '../../atoms/buttons/black-button';
+import { InputComponent } from '../../atoms/input/input';
 
 export const PopupCallbackMob = () => 
 
@@ -14,8 +15,8 @@ export const PopupCallbackMob = () =>
 			<StyledIconButton><CloseIcon fontSize="medium" color="primary"/></StyledIconButton>	
 			<PopupTitle>Обратный звонок</PopupTitle>
 			<BoxPopupDescr><PopupDescr>Мы свяжемся с вами в ближайшее время!</PopupDescr></BoxPopupDescr>
-			<BoxPopupInput><PopupInput placeholder="Телефон" type="tel"></PopupInput></BoxPopupInput>
-			<CheckboxAgree/>
-			<ButtonBlackWrapper><ButtonBlack blackBtn={theme.blackBtn}>Отправить</ButtonBlack></ButtonBlackWrapper>
+			<BoxPopupInput><InputComponent placeholder="Телефон" type="tel"/></BoxPopupInput>
+			<CheckboxWrapper><CheckboxButton text="Согласен (-на) с условиями оферты и обработкой персональных данных"/></CheckboxWrapper>
+			<ButtonBlackWrapper><ButtonBlack isBigBlackBtn text="Отправить"/></ButtonBlackWrapper>
 		</PaperCallbackMob>
 	</Overflow>

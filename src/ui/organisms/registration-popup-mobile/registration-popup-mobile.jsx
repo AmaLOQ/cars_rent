@@ -1,18 +1,19 @@
 import * as React from 'react';
-import { CheckboxAgree } from '../../molecules/checkbox-agree/checkbox-agree';
+import { CheckboxButton } from '../../atoms/checkbox/checkbox';
 import { Overflow } from '../callback-popup/callback-popup-styles';
 import { PaperRegistrationMob, DataForSingInBox, PostStateBox, AutorzationBox40, Autorzation12, PopupTitel22 } from './registration-popup-mobile-styles';
 import { BoxInputName, BoxInputSurname, DataForSingIn } from '..//registration-popup/registration-popup-style';
-import { BoxPopupDescr, PopupDescr, PopupInput } from '../callback-popup/callback-popup-styles';
+import { BoxPopupDescr, PopupDescr, CheckboxWrapper } from '../callback-popup/callback-popup-styles';
 import { RadioGroup } from '../../molecules/radio-button-group/radio-group';
-import { ButtonBlack, ButtonBlackWrapper } from '../../atoms/buttons/buttons';
-import { ButtonSqr } from '../../atoms/buttons/buttons';
+import { ButtonBlackWrapper } from '../../atoms/buttons/buttons';
+import { ButtonSquare } from '../../atoms/buttons/square-button';
 import { StyledIconButton } from '../callback-popup/callback-popup-styles';
 import CloseIcon from '@mui/icons-material/Close';
-import { theme } from "../../styles";
+import { ButtonBlack } from '../../atoms/buttons/black-button';
+import { InputComponent } from '../../atoms/input/input';
 
 const radioData = [
-	{ label: 'Легковые авто', defaultChecked: false },
+	{ label: 'Легковые авто', defaultChecked: true },
 	{ label: 'Грузовые авто', defaultChecked: false },
 ]
 
@@ -23,17 +24,17 @@ export const PopupRegistrationMob = () =>
 			<StyledIconButton><CloseIcon fontSize="medium" color="primary" /></StyledIconButton>
 			<PopupTitel22>Регистрация аккаунта</PopupTitel22>
 			<BoxPopupDescr><PopupDescr>Для того, чтобы войти или создать аккаунт</PopupDescr></BoxPopupDescr>
-			<BoxInputName><PopupInput placeholder="Имя" type="text"></PopupInput></BoxInputName>
-			<BoxInputSurname><PopupInput placeholder="Фамилия" type="text"></PopupInput></BoxInputSurname>
+			<BoxInputName><InputComponent placeholder="Имя" type="text"/></BoxInputName>
+			<BoxInputSurname><InputComponent placeholder="Фамилия" type="text"/></BoxInputSurname>
 			<RadioGroup radioData={radioData} />
 			<DataForSingInBox><DataForSingIn>данные для входа в сервис</DataForSingIn></DataForSingInBox>
-			<PostStateBox><PopupInput placeholder="Почта" type="text" /></PostStateBox>
-			<BoxInputSurname><PopupInput placeholder="Пароль" type="text" /></BoxInputSurname>
-			<CheckboxAgree />
-			<ButtonBlackWrapper><ButtonBlack blackBtn={theme.blackBtn}>Регистрация</ButtonBlack></ButtonBlackWrapper>
+			<PostStateBox><InputComponent placeholder="Почта" type="text"/></PostStateBox>
+			<BoxInputSurname><InputComponent placeholder="Пароль" type="text"/></BoxInputSurname>
+			<CheckboxWrapper><CheckboxButton text="Согласен (-на) с условиями оферты и обработкой персональных данных"/></CheckboxWrapper>
+			<ButtonBlackWrapper><ButtonBlack isBigBlackBtn text="регистрация"/></ButtonBlackWrapper>
 			<AutorzationBox40>
 				<Autorzation12>Авторизация на RENT AUTO</Autorzation12>
-				<ButtonSqr>Войти</ButtonSqr>
+				<ButtonSquare text="Войти"/>
 			</AutorzationBox40>
 		</PaperRegistrationMob>
 	</Overflow>

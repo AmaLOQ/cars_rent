@@ -23,10 +23,17 @@ export const DataForSingIn = styled(Typography)`
 	line-height: 15px;
 	font-weight: ${props => props.theme.typography.fontWeightBold};
 	font-size: ${props => props.theme.typography.body1.fontSize};
+	letter-spacing: -0.15px;
+	text-transform: uppercase;
 `;
 
 export const DataForSingInBox = styled(Box)`
 	margin-top: 27px;
+`;
+
+export const CheckboxWrapperReg = styled(Box)`
+	margin-top: 3px;
+	margin-bottom: 28px;
 `;
 
 export const Autorization = styled(Box)`
@@ -37,7 +44,7 @@ export const Autorization = styled(Box)`
 
 export const AutorizationBox = styled(Box)`
 	display: flex;
-	margin-top: 30px;
+	margin-top: 27px;
 	justify-content: space-between;
 	align-items: center;
 `;

@@ -1,4 +1,5 @@
 import {Button, Menu, MenuItem, styled} from "@mui/material";
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 export const ActiveMenuBtn = styled(Button)`
 	font-weight: ${props => props.theme.typography.fontWeight};
@@ -17,6 +18,10 @@ export const MenuActive = styled(Menu)`
 	width: 150px;
 	border-radius: 10px;
 	padding: 9px 15px;
+`;
+
+export const Arrow = styled(KeyboardArrowDownIcon)`
+	margin-left: -2px;
 `;
 
 export const MenuItemActive = styled(MenuItem)`

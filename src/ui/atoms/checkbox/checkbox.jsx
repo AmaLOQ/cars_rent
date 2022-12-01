@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {BtnCheckbox} from './checkbox-style';
+import { Checkbox } from '@mui/material';
 
-const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
-
-export const CheckboxBtn = () => <BtnCheckbox {...label} defaultChecked size='small'/>
+export const CheckboxButton = ({text}) => <BtnCheckbox control={<Checkbox defaultChecked />} label={text} />

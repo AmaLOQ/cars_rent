@@ -1,11 +1,11 @@
 import { Button, styled, Box } from "@mui/material";
-import {theme} from "../../styles";
+import {theme} from '../../styles'
 
-export const ButtonBlack = styled(Button)`
+export const StyledButtonBlack = styled(Button)`
 	border-radius: 100px;
-	font-size: ${({ blackBtn }) => blackBtn ? theme.blackBtn.fontSize : theme.typography.button};
-	padding: ${({ blackBtn }) => blackBtn ? theme.blackBtn : '7px 18px'};
-	text-transform: ${({ blackBtn }) => blackBtn ? theme.blackBtn : 'lowercase'};
+	font-size: ${({ isBigBlackBtn, props }) => isBigBlackBtn ? theme.isBigBlackBtn.fontSize : theme.typography.button};
+	padding: ${({ isBigBlackBtn, props }) => isBigBlackBtn ? theme.isBigBlackBtn.padding : '7px 18px'};
+	text-transform: ${({ isBigBlackBtn, props }) => isBigBlackBtn ? theme.isBigBlackBtn.textTransform : 'lowercase'};
 	line-height: 140%;
 	background: ${props => props.theme.palette.primary.main};
 	color: ${props => props.theme.palette.white};
@@ -21,9 +21,9 @@ export const ButtonBlackWrapper = styled(Box)`
 
 export const ButtonGradient = styled(Button)`
 	border-radius: 100px;
-	font-size: ${({ gradientBtn }) => gradientBtn ? theme.gradientBtn : theme.typography.subtitle2.fontSize};
-	padding: ${({ gradientBtn }) => gradientBtn ? theme.gradientBtn : '17px 40px'};
-	text-transform: ${({ gradientBtn }) => gradientBtn ? theme.gradientBtn : 'uppercase'};
+	font-size: ${({ isSmallGradientBtn, props }) => isSmallGradientBtn ? theme.isSmallGradientBtn.fontSize : theme.typography.subtitle2.fontSize};
+	padding: ${({ isSmallGradientBtn, props }) => isSmallGradientBtn ? theme.isSmallGradientBtn.padding : '17px 40px'};
+	text-transform: ${({ isSmallGradientBtn, props }) => isSmallGradientBtn ? theme.isSmallGradientBtn.textTransform : 'uppercase'};
 	line-height: 140%;
 	color: ${props => props.theme.palette.white};
 	background: linear-gradient(269.87deg, #014369 -17.97%, #289FCA 101.14%);
@@ -32,11 +32,12 @@ export const ButtonGradient = styled(Button)`
 		color: ${props => props.theme.palette.white};
 }`;
 
-export const ButtonSqr = styled(ButtonBlack)`
+export const ButtonSqr = styled(StyledButtonBlack)`
 	border: 1px solid ${props => props.theme.palette.primary.main};;
 	border-radius: 4px;
 	padding: 6.71px 27px; 
 	box-shadow: none;
+	text-transform: uppercase;
 	color: ${props => props.theme.palette.primary.main};
 	background: ${props => props.theme.palette.white};
 	:hover {

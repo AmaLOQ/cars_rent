@@ -1,4 +1,4 @@
-import { styled, Typography, Input, Box, IconButton} from '@mui/material';
+import { styled, Typography, Box, IconButton} from '@mui/material';
 import Paper from '@mui/material/Paper';
 
 export const Overflow = styled('div')`
@@ -26,6 +26,7 @@ export const PaperCallback = styled(Paper)`
 export const PopupTitle = styled(Typography)`
 	line-height: 29px;
 	text-align: center;
+	letter-spacing: -0.25px;
 	font-size: ${props => props.theme.typography.subtitle1.fontSize};
 	font-weight: ${props => props.theme.typography.subtitle1.fontWeight};
 `;
@@ -34,6 +35,7 @@ export const PopupDescr = styled(Typography)`
 	line-height: 140%;
 	text-transform: none;
 	text-align: center;
+	letter-spacing: 0.13px;
 	font-size: ${props => props.theme.typography.h5.fontSize};
 `;
 
@@ -41,25 +43,19 @@ export const BoxPopupDescr = styled(Typography)`
 	margin-top: 15px;
 `;
 
-export const PopupInput = styled(Input)`
-	width: 100%;
-	padding: 6.44px 15px;
-	border: 1px solid ${props => props.theme.palette.primary.main};
-	border-radius: 4px;
-	line-height: 18px;
-	font-weight: ${props => props.theme.typography.fontWeightRegular};
-	font-size: ${props => props.theme.typography.h5.fontSize};
-`;
-
 export const BoxPopupInput = styled(Box)`
 	margin-top: 25px;
-	margin-bottom: 15px;
+	margin-bottom: 5px;
+`;
+
+export const CheckboxWrapper = styled(Box)`
+	margin-bottom: 21px;
 `;
 
 export const StyledIconButton = styled(IconButton)`
 	position: absolute;
-	top: 7px;
-	right: 7px;
+	top: 0px;
+	right: 1px;
 `;
 
 

@@ -2,36 +2,36 @@ import { createTheme } from "@mui/material";
 
 
 const COLOR = {
-	semiBlack: '#242424',
-	btnHover: 'rgba(36, 36, 36, 0.7)',
-	grayLight: '#EFEFEF',
-	gradiendDef: 'linear-gradient(269.87deg, #014369 -17.97%, #289FCA 101.14%)',
-	gradientHover: 'linear-gradient(269.87deg, rgba(1, 67, 105, 0.7) -17.97%, rgba(40, 159, 202, 0.7) 101.14%)',
-	grayDark: '#636363',
-	redLight: '#FFC5C5',
+	SEMI_BLACK: '#242424',
+	BTN_HOVER: 'rgba(36, 36, 36, 0.7)',
+	GRAY_DARK: '#636363',
+	GRAY_LIGHT: '#EFEFEF',
+	GRADIENT_DEFAULT: 'linear-gradient(269.87deg, #014369 -17.97%, #289FCA 101.14%)',
+	GRADIENT_HOVER: 'linear-gradient(269.87deg, rgba(1, 67, 105, 0.7) -17.97%, rgba(40, 159, 202, 0.7) 101.14%)',
+	RED_LIGHT: '#FFC5C5',
 }
 
 export const theme = createTheme({
 	palette: {
 		primary: {
-			main: COLOR.semiBlack,
-			light: COLOR.btnHover,
+			main: COLOR.SEMI_BLACK,
+			light: COLOR.BTN_HOVER,
 		},
 		secondary: {
-			main: COLOR.grayDark,
-			light: COLOR.grayLight,
+			main: COLOR.GRAY_DARK,
+			light: COLOR.GRAY_LIGHT,
 		},
 		warning: {
-			main: COLOR.redLight
+			main: COLOR.RED_LIGHT
 		},
 		white: '#fff',
 	},
-	blackBtn: {
+	isBigBlackBtn: {
 		fontSize: '16px',
 		padding: '17px 50px',
 		textTransform: 'uppercase',
 	},
-	gradientBtn: {
+	isSmallGradientBtn: {
 		fontSize: '14px',
 		padding: '7.7px 57.7px',
 		textTransform: 'capitalize',
