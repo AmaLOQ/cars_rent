@@ -5,7 +5,7 @@ import { theme } from "../ui/styles";
 import { ButtonBlack, ButtonSqr, TabLeftBtn, TabRightBtn } from "../ui/atoms/buttons/buttons";
 import { ButtonGradient } from "../ui/atoms/buttons/buttons";
 import { PositionedMenu } from "../ui/atoms/menu-active/menu-active";
-import { RangeSlider } from "../ui/atoms/slider/slider";
+import { Slider } from "../ui/atoms/slider/slider";
 import { CustomSwitcher } from "../ui/atoms/switcher/switcher-desktop";
 import { PopoupCallbackDesk } from "../ui/organisms//callback-popup/callback-popup";
 import { PopupCallbackMob } from "../ui/organisms//callback-popup-mobile/callback-popup-mobile";
@@ -19,6 +19,7 @@ function App() {
       <CssBaseline>
         <PositionedMenu />
         <CustomSwitcher />
+        <Slider/>
         {/* <PopoupCallbackDesk/> */}
         {/* <PopupCallbackMob/> */}
         {/* <PopupRegistrationkDesk/> */}
