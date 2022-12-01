@@ -1,50 +1,52 @@
-import { Box, styled, Grid, Typography } from "@mui/material";
+import { Box, styled, Typography } from "@mui/material";
 
-const HeaderWrapper = styled(Box)`
+export const HeaderWrapper = styled(Box)`
 	display: flex;
-	justify-content: space-between;
 	min-height: 72px;
-	border-bottom: 1px solid #242424;
+	border-bottom: 1px solid ${props => props.theme.palette.primary.main};
+	justify-content: space-between;
 `;
 
-const GridContainerNaw = styled(Box)`
+export const GridContainerNaw = styled(Box)`
 	display: grid;
-	grid-template-columns: 152px repeat(4, minmax(40px, auto));
+	grid-template-columns: repeat(2, auto);
 	column-gap: 30px;
 	align-items: center;
 `;
 
-const GridContainerButtons = styled(Box)`
+export const GridContainerButtons = styled(Box)`
 	position: relative;
 	display: grid;
-	grid-template-columns: 80px 132px 50px;
+	grid-template-columns: 90px 132px 50px;
 	align-items: center;
-	column-gap: 10px;
+	column-gap: 6px;
 `;
 
-
-const HeaderTextStyle = styled(Typography)`
-	font-weight: 600;
-	font-size: 16px;
-	line-height: 140%;
+export const HeaderTextStyle = styled(Typography)`
+	a{
+		font-size: ${props => props.theme.typography.h4.fontSize};
+		font-weight: ${props => props.theme.typography.fontWeight};
+		color: ${props => props.theme.palette.primary.main};
+		line-height: 140%;
+		text-decoration: none;
+	}
 `;
 
-const SwitcherWrapper = styled(Box)`
+export const SwitcherWrapper = styled(Box)`
 	position: relative;
 	top: -1px;
-	left: 11px;	
-`;
-const HeaderLogo = styled(Box)`
+	left: 12px;	
 `;
 
+export const HeaderLogo = styled(Box)`
+	display: flex;
+	width: 150px;
+	align-items: center;
+`;
 
-
-
-export {
-	HeaderWrapper,
-	GridContainerNaw,
-	GridContainerButtons,
-	HeaderTextStyle,
- 	SwitcherWrapper,
-	HeaderLogo,
-}
+export const Nav = styled(Box)`
+	display: grid;
+	grid-template-columns: repeat(4, minmax(40px, auto));
+	grid-template-rows: auto;
+	column-gap: 32px;
+`;
