@@ -53,6 +53,7 @@ export const theme = createTheme({
 			fontSize: '14px',
 		},
 		subtitle1: {
+			fontSize: '24px',
 			fontWeight: 700,
 			fontSize: '24px',
 		},
@@ -64,23 +65,6 @@ export const theme = createTheme({
 		},
 		body1: {
 			fontSize: '12px',
-		},
-		body2 :{
-			fontSize: '22px',
 		}
 	},
-	customComponents: {
-		buttons: {
-			bigBlackBtn: {
-				fontSize: '16px',
-				padding: '17px 50px',
-				textTransform: 'uppercase',
-			},
-			smallGradientBtn: {
-				fontSize: '14px',
-				padding: '7.7px 57.7px',
-				textTransform: 'capitalize',
-			},
-		},
-	},
-})
+})  
