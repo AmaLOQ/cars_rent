@@ -1,32 +1,34 @@
 import React from "react";
-import SingInBtn from "../ui/atoms/buttons/sing-In-btn";
-import SingInSqrBtn from "../ui/atoms/buttons/sing-in-square-btn";
-import SendBtn from "../ui/atoms/buttons/send-btn";
-import RegistrationBtn from "../ui/atoms/buttons/registration-btn";
-import OrderBtn from "../ui/atoms/buttons/order-call-btn";
-import DetailedBtn from "../ui/atoms/buttons/detailed-btn";
-import TabLeftButton from "../ui/atoms/buttons/tab-left-btn";
-import TabRightButtton from "../ui/atoms/buttons/tab-right-btn";
-import SendMobBtn from "../ui/atoms/buttons/send-mobile-btn";
-import RegPopupBtn from "../ui/atoms/buttons/registration-popup-btn";
-import RegPopupMobBtn from "../ui/atoms/buttons/registration-popup-mobile-btn";
 import { ThemeProvider } from "@emotion/react";
-import theme from "../ui/styles";
+import { CssBaseline } from "@mui/material";
+import { theme } from "../ui/styles";
+import { GradientButton } from "../ui/atoms/buttons/gradient-button/gradient-button";
+import { PositionedMenu } from "../ui/atoms/menu-active/menu-active";
+import { CustomSwitcher } from "../ui/atoms/switcher/switcher-desktop";
+import { PopupCallbackDesk } from "../ui/organisms//callback-popup/callback-popup";
+import { PopupCallbackMob } from "../ui/organisms//callback-popup-mobile/callback-popup-mobile";
+import { PopupRegistrationkDesk } from "../ui/organisms/registration-popup/registration-popup";
+import { PopupRegistrationMob } from "../ui/organisms//registration-popup-mobile/registration-popup-mobile";
+import { ButtonBlack } from "../ui/atoms/buttons/black-button/black-button";
+import { CheckboxButton } from "../ui/atoms/checkbox/checkbox";
+import { ButtonSquare } from "../ui/atoms/buttons/square-btn/square-button";
+
+
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <SingInBtn/>
-      <SingInSqrBtn/>
-      <SendBtn/>
-      <RegistrationBtn/>
-      <OrderBtn/>
-      <DetailedBtn/>
-      <TabLeftButton/>
-      <TabRightButtton/>
-      <SendMobBtn/>
-      <RegPopupBtn/>
-      <RegPopupMobBtn/>
+      <CssBaseline>
+        {/* <ButtonBlack text="регистрация" /> */}
+        {/* <GradientButton  text="Заказать звонок"/> */}
+        <PositionedMenu/>
+        {/* <CheckboxButton text="Согласен (-на) с условиями оферты и обработкой персональных данных"/> */}
+        {/* <PopupCallbackDesk/> */}
+        {/* <PopupCallbackMob/> */}
+        {/* <PopupRegistrationkDesk/> */}
+        {/* <PopupRegistrationMob/> */}
+        {/* <ButtonSquare text="Войти"/> */}
+      </CssBaseline>
     </ThemeProvider>
   );
 }
