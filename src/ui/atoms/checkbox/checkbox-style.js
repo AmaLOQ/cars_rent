@@ -1,6 +1,6 @@
-import {FormControlLabel, styled} from '@mui/material';
+import {FormControlLabel, styled, Box} from '@mui/material';
 
-export const BtnCheckbox = styled(FormControlLabel)`
+export const StyledBtnCheckbox = styled(FormControlLabel)`
 	margin-right: 0px;
 	span:nth-child(1n) {
 		display: inline-block;
@@ -16,5 +16,8 @@ export const BtnCheckbox = styled(FormControlLabel)`
 		font-weight: ${props => props.theme.typography.fontWeightRegular};
 		color: ${props => props.theme.palette.primary.main};
 	}
+`;
 
+export const CheckboxWrapper = styled(Box)`
+	margin-bottom: 25px;
 `;

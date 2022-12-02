@@ -1,6 +1,6 @@
 import {FormControlLabel, styled} from '@mui/material/';
 
-export const RadioBtn = styled(FormControlLabel)`
+export const StyledRadioBtn = styled(FormControlLabel)`
 	margin: 0;
 	margin-left: -13px;
 	margin-right: 13px;

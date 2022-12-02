@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ActiveMenuBtn, MenuActive, MenuItemActive, Arrow } from './menu-active-style';
+import { StyledActiveMenuBtn, StyledMenuActive, StyledMenuItemActive, Arrow } from './menu-active-style';
 
 
 export const PositionedMenu = () => {
@@ -14,7 +14,7 @@ export const PositionedMenu = () => {
 
   return (
     <div>
-      <ActiveMenuBtn
+      <StyledActiveMenuBtn
         id="demo-positioned-button"
         aria-controls={open ? 'demo-positioned-menu' : undefined}
         aria-haspopup="true"
@@ -23,8 +23,8 @@ export const PositionedMenu = () => {
         endIcon={<Arrow/>}
       >
         Аренда авто
-      </ActiveMenuBtn>
-      <MenuActive
+      </StyledActiveMenuBtn>
+      <StyledMenuActive
         id="demo-positioned-menu"
         aria-labelledby="demo-positioned-button"
         anchorEl={anchorEl}
@@ -39,10 +39,10 @@ export const PositionedMenu = () => {
           horizontal: 'left',
         }}
       >
-        <MenuItemActive onClick={handleClose}><a href="#">Аренда авто</a></MenuItemActive>
-        <MenuItemActive onClick={handleClose}><a href="#">Условия</a></MenuItemActive>
-        <MenuItemActive onClick={handleClose}><a href="#">Цены</a></MenuItemActive>
-      </MenuActive>
+        <StyledMenuItemActive onClick={handleClose}><a href="#">Аренда авто</a></StyledMenuItemActive>
+        <StyledMenuItemActive onClick={handleClose}><a href="#">Условия</a></StyledMenuItemActive>
+        <StyledMenuItemActive onClick={handleClose}><a href="#">Цены</a></StyledMenuItemActive>
+      </StyledMenuActive>
     </div>
   );
 }

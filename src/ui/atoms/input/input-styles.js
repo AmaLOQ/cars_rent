@@ -2,7 +2,7 @@ import { Input, styled } from "@mui/material";
 
 export const StyledInput = styled(Input)`
 	width: 100%;
-	padding: 6.44px 15px;
+	padding: 8.2px 9px 5px;
 	border: 1px solid ${props => props.theme.palette.primary.main};
 	border-radius: 4px;
 	line-height: 18px;

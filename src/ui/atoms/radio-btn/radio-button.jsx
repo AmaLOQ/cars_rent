@@ -1,5 +1,5 @@
 import React from "react";
 import { Radio } from "@mui/material";
-import { RadioBtn } from "./radio-btn-style";
+import { StyledRadioBtn } from "./radio-btn-style";
 
-export const RadioButtons = ({radioData}) => radioData.map(el => <RadioBtn label={el.label} control={<Radio/>} checked={el.defaultChecked} />)
+export const RadioButtons = ({radioData}) => radioData.map(el => <StyledRadioBtn label={el.label} control={<Radio/>} checked={el.defaultChecked} />)

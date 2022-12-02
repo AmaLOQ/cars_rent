@@ -31,4 +31,7 @@ export const AutorzationBox40 = styled(Box)`
 
 export const Autorzation12 = styled(Typography)`
 	font-size: ${props => props.theme.typography.body1.fontSize};
+	span {
+		text-transform: uppercase;
+	}
 `;

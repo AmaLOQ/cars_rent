@@ -48,10 +48,6 @@ export const BoxPopupInput = styled(Box)`
 	margin-bottom: 5px;
 `;
 
-export const CheckboxWrapper = styled(Box)`
-	margin-bottom: 21px;
-`;
-
 export const StyledIconButton = styled(IconButton)`
 	position: absolute;
 	top: 0px;

@@ -1,6 +1,5 @@
 import { createTheme } from "@mui/material";
 
-
 const COLOR = {
 	SEMI_BLACK: '#242424',
 	BTN_HOVER: 'rgba(36, 36, 36, 0.7)',
@@ -26,19 +25,9 @@ export const theme = createTheme({
 		},
 		white: '#fff',
 	},
-	isBigBlackBtn: {
-		fontSize: '16px',
-		padding: '17px 50px',
-		textTransform: 'uppercase',
-	},
-	isSmallGradientBtn: {
-		fontSize: '14px',
-		padding: '7.7px 57.7px',
-		textTransform: 'capitalize',
-	},
 	typography: {
 		fontFamily: 'Montserrat',
-		fontSize: 16,
+		fontSize: '16px',
 		fontWeight: 600,
 		fontWeightLight: 300,
 		fontWeightRegular: 400,
@@ -78,5 +67,19 @@ export const theme = createTheme({
 		body2 :{
 			fontSize: '22px',
 		}
+	},
+	customComponents: {
+		buttons: {
+			bigBlackBtn: {
+				fontSize: '16px',
+				padding: '17px 50px',
+				textTransform: 'uppercase',
+			},
+			smallGradientBtn: {
+				fontSize: '14px',
+				padding: '7.7px 57.7px',
+				textTransform: 'capitalize',
+			},
+		},
 	},
 })
