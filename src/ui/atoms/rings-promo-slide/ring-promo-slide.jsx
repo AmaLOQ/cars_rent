@@ -1,14 +1,6 @@
 import React from "react";
 import { RingPromo, EmptyWhiteRingPromo } from "./ring-promo-slide-styles";
 
-export function RingPromoSlide() {
-	return <RingPromo/>
-}
+export const RingPromoSlide = () => <RingPromo/>
 
-export function EmptyRingPromoSlide() {
-	return (
-		<RingPromo>
-			<EmptyWhiteRingPromo/>
-		</RingPromo>
-	)
-}
+export const EmptyRingPromoSlide = () => <RingPromo><EmptyWhiteRingPromo/></RingPromo>
