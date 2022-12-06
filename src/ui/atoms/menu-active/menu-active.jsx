@@ -1,5 +1,7 @@
 import * as React from 'react';
-import { StyledActiveMenuBtn, StyledMenuActive, StyledMenuItemActive, Arrow } from './menu-active-style';
+import { StyledActiveMenuBtn, StyledMenuActive, StyledMenuItemActive} from './menu-active-style';
+import { Link } from '../link/link';
+import Arrow from '@mui/icons-material/KeyboardArrowRight';
 
 
 export const PositionedMenu = () => {
@@ -39,9 +41,9 @@ export const PositionedMenu = () => {
           horizontal: 'left',
         }}
       >
-        <StyledMenuItemActive onClick={handleClose}><a href="#">Аренда авто</a></StyledMenuItemActive>
-        <StyledMenuItemActive onClick={handleClose}><a href="#">Условия</a></StyledMenuItemActive>
-        <StyledMenuItemActive onClick={handleClose}><a href="#">Цены</a></StyledMenuItemActive>
+        <StyledMenuItemActive onClick={handleClose}><Link text="Аренда авто" variant="menuActive"/></StyledMenuItemActive>
+        <StyledMenuItemActive onClick={handleClose}><Link text="Условия" variant="menuActive"/></StyledMenuItemActive>
+        <StyledMenuItemActive onClick={handleClose}><Link text="Цены" variant="menuActive"/></StyledMenuItemActive>
       </StyledMenuActive>
     </div>
   );

@@ -27,7 +27,6 @@ const radioData = [
 ]
 
 export const PopupRegistrationkDesk = () =>
-
 	<Overflow>
 		<PaperRegistration>
 			<StyledIconButton><CloseIcon fontSize="medium" color="primary" /></StyledIconButton>

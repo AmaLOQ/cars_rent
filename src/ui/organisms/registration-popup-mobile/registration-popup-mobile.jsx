@@ -19,7 +19,6 @@ const radioData = [
 ]
 
 export const PopupRegistrationMob = () =>
-
 	<Overflow>
 		<PaperRegistrationMob>
 			<StyledIconButton><CloseIcon fontSize="medium" color="primary" /></StyledIconButton>
