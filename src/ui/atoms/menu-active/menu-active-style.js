@@ -12,6 +12,10 @@ export const StyledActiveMenuBtn = styled(Button)`
 		margin-left: 0px;
 		color: ${props => props.theme.palette.primary.main};
 	}
+	svg {
+		width: 16px;
+		height: 16px;
+	}
 `;
 
 export const StyledMenuActive = styled(Menu)`
@@ -21,7 +25,6 @@ export const StyledMenuActive = styled(Menu)`
 `;
 
 export const Arrow = styled(KeyboardArrowDownIcon)`
-	margin-left: -4px;
 `;
 
 export const StyledMenuItemActive = styled(MenuItem)`

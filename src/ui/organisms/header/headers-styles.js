@@ -49,8 +49,7 @@ export const HeaderLogo = styled(Box)`
 `;
 
 export const Nav = styled(Box)`
-	display: grid;
-	grid-template-columns: repeat(6, minmax(40px, auto));
-	grid-template-rows: auto;
+	display: flex;
+	flex-wrap: wrap;
 	column-gap: 32px;
 `;

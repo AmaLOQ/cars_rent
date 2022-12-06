@@ -4,6 +4,7 @@ import { ThemeProvider } from "@emotion/react";
 import { CssBaseline } from "@mui/material";
 import {StyledContainer} from "../ui/container";
 import {theme} from "../ui/styles";
+import { PositionedMenu } from "../ui/atoms/menu-active/menu-active";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <CssBaseline>
           <StyledContainer>
             <Header/>
+            {/* <PositionedMenu/> */}
           </StyledContainer>
         </CssBaseline>
       </ThemeProvider>

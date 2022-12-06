@@ -65,4 +65,18 @@ export const theme = createTheme({
 			fontSize: '12px',
 		}
 	},
-})  
+	customComponents: {
+		buttons: {
+			bigBlackBtn: {
+				fontSize: '16px',
+				padding: '17px 50px',
+				textTransform: 'uppercase',
+			},
+			smallGradientBtn: {
+				fontSize: '14px',
+				padding: '7.7px 57.7px',
+				textTransform: 'capitalize',
+			},
+		},
+	},
+}) 
