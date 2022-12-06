@@ -1,6 +1,6 @@
 import { Box, styled } from "@mui/material";
 
-const RingPromo = styled(Box)`
+export const RingPromo = styled(Box)`
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -10,16 +10,9 @@ const RingPromo = styled(Box)`
 	background: linear-gradient(269.87deg, #014369 -17.97%, #289FCA 101.14%);
 `;
 
-
-const EmptyWhiteRingPromo = styled(Box)`
+export const EmptyWhiteRingPromo = styled(Box)`
 	width: 11px;
 	height: 11px;
-	background: #fff;
+	background: ${props => props.theme.palette.white};
 	border-radius: 100%;
 `;
-
-
-export {
-	RingPromo,
-	EmptyWhiteRingPromo
-}

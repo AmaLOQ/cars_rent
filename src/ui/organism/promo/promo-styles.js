@@ -1,6 +1,6 @@
 import { Box, styled, Typography } from "@mui/material";
 
-const PromoWrapper = styled(Box)`
+export const PromoWrapper = styled(Box)`
 	display: grid;
 	grid-template-columns: 470px 1fr;
 	grid-template-rows: 225px minmax(116px, auto) minmax(145px, auto) auto;
@@ -8,16 +8,16 @@ const PromoWrapper = styled(Box)`
 	padding: 148px 0px 124px 0px;
 `;
 
-const PromoTitle = styled(Typography)`
+export const PromoTitle = styled(Typography)`
 	align-self: end;
-	font-weight: 800;
-	font-size: 54px;
+	font-weight: ${props => props.theme.typography.fontWeightExtraBold};
+	font-size: ${props => props.theme.typography.h1.fontSize};
 	line-height: 140%;
 	color: ${props => props.theme.palette.primary.main};
 	text-transform: uppercase;
 `;
 
-const PromoRing = styled(Box)`
+export const PromoRing = styled(Box)`
 	position: relative;
 	grid-column: 2/3;
 	grid-row: 1/4;
@@ -33,17 +33,17 @@ const PromoRing = styled(Box)`
 	}
 `;
 
-const PromoDescr = styled(Typography)`
-	align-self: start;
+export const PromoDescription = styled(Typography)`
 	margin-top: 19px;
-	font-weight: 400;
-	font-size: 20px;
+	align-self: start;
+	font-weight: ${props => props.theme.typography.fontWeightRegular};
+	font-size: ${props => props.theme.typography.caption.fontSize};
 	line-height: 140%;
 	color: ${props => props.theme.palette.primary.main};
 	text-transform: none;
 `;
 
-const PromoRingSlideWrapper = styled(Box)`
+export const PromoRingSlideWrapper = styled(Box)`
 	position: relative;
 	display: grid;
 	grid-column: 2/3;
@@ -57,16 +57,6 @@ const PromoRingSlideWrapper = styled(Box)`
 	align-items: center;
 `;
 
-const OrderBtnWrapper = styled(Box)`
+export const OrderBtnWrapper = styled(Box)`
 	grid-row: 3/5;
 `;
-
-
-export {
-	PromoWrapper,
-	PromoTitle,
-	PromoRing,
-	PromoDescr,
-	PromoRingSlideWrapper,
-	OrderBtnWrapper
-}

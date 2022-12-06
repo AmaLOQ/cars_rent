@@ -7,18 +7,18 @@ import {
 	PromoWrapper,
 	PromoTitle,
 	PromoRing,
-	PromoDescr,
+	PromoDescription,
 	PromoRingSlideWrapper,
 	OrderBtnWrapper
 } from "./promo-styles";
 
-export default function Main() {
-	return (
+export const Promo = () => 
+
 		<CssBaseline>
 			<PromoWrapper>
 				<PromoTitle>Аренда автомобилей</PromoTitle>
 				<PromoRing><img src={mainCar} alt="Авто" /></PromoRing>
-				<PromoDescr>Мы объединили предложения частных автовладельцев по всей России</PromoDescr>
+				<PromoDescription>Мы объединили предложения частных автовладельцев по всей России</PromoDescription>
 				<OrderBtnWrapper><OrderBtn/></OrderBtnWrapper>
 				<PromoRingSlideWrapper>
 					<RingPromoSlide/>
@@ -27,5 +27,3 @@ export default function Main() {
 				</PromoRingSlideWrapper>
 			</PromoWrapper>
 		</CssBaseline>
-	)
-}
