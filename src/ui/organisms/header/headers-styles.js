@@ -23,16 +23,6 @@ export const GridContainerButtons = styled(Box)`
 	column-gap: 6px;
 `;
 
-export const HeaderTextStyled = styled(Typography)`
-	a{
-		font-size: ${props => props.theme.typography.h4.fontSize};
-		font-weight: ${props => props.theme.typography.fontWeight};
-		color: ${props => props.theme.palette.primary.main};
-		line-height: 140%;
-		text-decoration: none;
-	}
-`;
-
 export const SwitcherWrapper = styled(Box)`
 	position: relative;
 	top: -1px;
@@ -42,9 +32,11 @@ export const SwitcherWrapper = styled(Box)`
 export const HeaderLogo = styled(Box)`
 	display: flex;
 	width: 151px;
+	height: 35px;
 	align-items: center;
 	img {
 		max-width: 100%;
+		max-height: 100%;
 	}
 `;
 

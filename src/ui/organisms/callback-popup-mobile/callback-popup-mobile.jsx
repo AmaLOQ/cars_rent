@@ -10,7 +10,6 @@ import { ButtonBlack } from '../../atoms/buttons/black-button/black-button';
 import { InputComponent } from '../../atoms/input/input';
 
 export const PopupCallbackMob = () =>
-
 	<Overflow>
 		<PaperCallbackMob>
 			<StyledIconButton><CloseIcon fontSize="medium" color="primary" /></StyledIconButton>

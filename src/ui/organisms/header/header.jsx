@@ -1,30 +1,21 @@
 import React from "react";
 import logo from "../../ico/logo.svg";
-import { Link } from "@mui/material";
+import { Link } from "../../atoms/link/link";
+import { Link as LogoLink } from "@mui/material";
 import { ButtonBlack } from "../../atoms/buttons/black-button/black-button";
 import {CustomSwitcher} from "../../atoms/switcher/switcher-desktop";
 import {PositionedMenu} from "../../atoms/menu-active/menu-active";
-import {
-	HeaderLogo, 
-	GridContainerNaw, 
-	GridContainerButtons,
-	HeaderTextStyled,
-	HeaderWrapper,
-	SwitcherWrapper,
-	Nav,
-} from "./headers-styles";
-
+import {HeaderLogo, GridContainerNaw, GridContainerButtons, HeaderWrapper, SwitcherWrapper, Nav} from "./headers-styles";
 
 export const Header = () => 
-
 	<HeaderWrapper>
 		<GridContainerNaw>
-			<HeaderLogo><Link href="#"><img src={logo} alt="logo"/></Link></HeaderLogo>
+			<HeaderLogo><LogoLink href="#"><img src={logo} alt="logo"/></LogoLink></HeaderLogo>
 			<Nav>
 				<PositionedMenu/>
-				<HeaderTextStyled><Link href="#">Сдать авто</Link></HeaderTextStyled>
-				<HeaderTextStyled><Link href="#">О нас</Link></HeaderTextStyled>
-				<HeaderTextStyled><Link href="#">Контакты</Link></HeaderTextStyled>
+				<Link isHash text="Сдать авто"/>
+				<Link isHash text="О нас" />
+				<Link isHash text="Контакты" />
 			</Nav>
 		</GridContainerNaw>
 		<GridContainerButtons>
