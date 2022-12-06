@@ -32,7 +32,6 @@ export const theme = createTheme({
 		fontWeightLight: 300,
 		fontWeightRegular: 400,
 		fontWeightMedium: 500,
-		fontWeight: 600,
 		fontWeightBold: 700,
 		h1: {
 			fontSize: '54px',
@@ -55,7 +54,6 @@ export const theme = createTheme({
 		subtitle1: {
 			fontSize: '24px',
 			fontWeight: 700,
-			fontSize: '24px',
 		},
 		subtitle2: {
 			fontSize: '18px',

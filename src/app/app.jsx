@@ -1,15 +1,18 @@
 import React from "react";
-import {Header} from "../ui/organism/header/header";
+import {Header} from "../ui/organisms/header/header";
 import { ThemeProvider } from "@emotion/react";
+import { CssBaseline } from "@mui/material";
 import {StyledContainer} from "../ui/container";
 import {theme} from "../ui/styles";
 
 function App() {
   return (
-        <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline>
           <StyledContainer>
             <Header/>
           </StyledContainer>
+        </CssBaseline>
       </ThemeProvider>
   );
 }

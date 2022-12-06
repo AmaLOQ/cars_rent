@@ -6,7 +6,7 @@ export const StyledActiveMenuBtn = styled(Button)`
 	font-size: ${props => props.theme.typography.h4.fontSize};
 	line-height: 140%;
 	text-transform: none;
-	padding: 0 3px;
+	padding: 0 ;
 	color: ${props => props.theme.palette.primary.main};
 	span {
 		margin-left: 0px;
@@ -21,7 +21,7 @@ export const StyledMenuActive = styled(Menu)`
 `;
 
 export const Arrow = styled(KeyboardArrowDownIcon)`
-	margin-left: -2px;
+	margin-left: -4px;
 `;
 
 export const StyledMenuItemActive = styled(MenuItem)`
@@ -32,6 +32,5 @@ export const StyledMenuItemActive = styled(MenuItem)`
 	text-transform: none;
 	a {
 		color: ${props => props.theme.palette.primary.main};
-		text-decoration: none;
 	}
 `;

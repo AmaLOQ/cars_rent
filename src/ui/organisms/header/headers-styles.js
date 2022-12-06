@@ -19,10 +19,11 @@ export const GridContainerButtons = styled(Box)`
 	display: grid;
 	grid-template-columns: 90px 132px 50px;
 	align-items: center;
+	justify-items: start;
 	column-gap: 6px;
 `;
 
-export const HeaderTextStyle = styled(Typography)`
+export const HeaderTextStyled = styled(Typography)`
 	a{
 		font-size: ${props => props.theme.typography.h4.fontSize};
 		font-weight: ${props => props.theme.typography.fontWeight};
@@ -35,18 +36,21 @@ export const HeaderTextStyle = styled(Typography)`
 export const SwitcherWrapper = styled(Box)`
 	position: relative;
 	top: -1px;
-	left: 12px;	
+	left: 20px;	
 `;
 
 export const HeaderLogo = styled(Box)`
 	display: flex;
-	width: 150px;
+	width: 151px;
 	align-items: center;
+	img {
+		max-width: 100%;
+	}
 `;
 
 export const Nav = styled(Box)`
 	display: grid;
-	grid-template-columns: repeat(4, minmax(40px, auto));
+	grid-template-columns: repeat(6, minmax(40px, auto));
 	grid-template-rows: auto;
 	column-gap: 32px;
 `;
