@@ -5,6 +5,10 @@ import { ThemeProvider } from "@emotion/react";
 import { CssBaseline } from "@mui/material";
 import {StyledContainer} from "../ui/container";
 import {theme} from "../ui/styles";
+import { Footer } from "../ui/organisms/footer/footer";
+import { LinksGroup } from "../ui/molecules/promo-links-group/promo-links-group";
+
+
 
 function App() {
   return (
