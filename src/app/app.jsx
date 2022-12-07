@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../ui/organism/header/header";
-import {Promo} from "../ui/organism/promo/promo";
+import {Header} from "../ui/organisms/header/header";
+import {Promo} from "../ui/organisms/promo/promo";
 import { ThemeProvider } from "@emotion/react";
 import { CssBaseline } from "@mui/material";
 import {StyledContainer} from "../ui/container";

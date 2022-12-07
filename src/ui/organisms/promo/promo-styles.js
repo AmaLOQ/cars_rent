@@ -13,6 +13,7 @@ export const PromoTitle = styled(Typography)`
 	font-weight: ${props => props.theme.typography.fontWeightExtraBold};
 	font-size: ${props => props.theme.typography.h1.fontSize};
 	line-height: 140%;
+	letter-spacing: -0.3px;
 	color: ${props => props.theme.palette.primary.main};
 	text-transform: uppercase;
 `;
@@ -41,6 +42,11 @@ export const PromoDescription = styled(Typography)`
 	line-height: 140%;
 	color: ${props => props.theme.palette.primary.main};
 	text-transform: none;
+`;
+
+export const PromoBtnWrapper = styled(Box)`
+	justify-self: start;
+	align-self: start;
 `;
 
 export const PromoRingSlideWrapper = styled(Box)`
