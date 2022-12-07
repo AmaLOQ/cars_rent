@@ -1,11 +1,17 @@
 import React from "react";
 import logo from "../../ico/logo.svg";
-import { Link } from "../../atoms/link/link";
+import { LinksGroup } from "../../molecules/promo-links-group/promo-links-group";
 import { Link as LogoLink } from "@mui/material";
 import { ButtonBlack } from "../../atoms/buttons/black-button/black-button";
 import {CustomSwitcher} from "../../atoms/switcher/switcher-desktop";
 import {PositionedMenu} from "../../atoms/menu-active/menu-active";
 import {HeaderLogo, GridContainerNaw, GridContainerButtons, HeaderWrapper, SwitcherWrapper, Nav} from "./headers-styles";
+
+const linksData = [
+	{text: 'Сдать авто', isHash: true},
+	{text: 'О нас', isHash: true},
+	{text: 'Контакты', isHash: true},
+]
 
 export const Header = () => 
 	<HeaderWrapper>
@@ -13,9 +19,7 @@ export const Header = () =>
 			<HeaderLogo><LogoLink href="#"><img src={logo} alt="logo"/></LogoLink></HeaderLogo>
 			<Nav>
 				<PositionedMenu/>
-				<Link isHash text="Сдать авто"/>
-				<Link isHash text="О нас" />
-				<Link isHash text="Контакты" />
+				<LinksGroup linksData={linksData}/>
 			</Nav>
 		</GridContainerNaw>
 		<GridContainerButtons>

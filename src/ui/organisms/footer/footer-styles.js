@@ -18,28 +18,6 @@ export const FootertNav = styled(Box)`
 	grid-auto-flow: row;
 `;
 
-export const FootertNavTopic = styled(Typography)`
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 20px;
-	color: #242424;
-	text-transform: none;
-	text-decoration: none;
-	align-self: end;
-	a {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 20px;
-	color: #242424;
-	text-transform: none;
-	text-decoration: none;
-	align-self: end;
-	:hover {
-		text-decoration: underline;
-	}
-	}
-`;
-
 export const FootertContact = styled(Box)`
 	display: grid;
 	grid-template-columns: auto;
@@ -47,15 +25,21 @@ export const FootertContact = styled(Box)`
 	gap: 10px;
 `;
 
-export const FootertContactCall = styled(FootertNavTopic)`
+export const FootertContactCall = styled(Typography)`
+	font-weight: ${props => props.theme.typography.fontWeightMedium};
+	font-size: ${props => props.theme.typography.h4.fontSize};
+	line-height: 20px;
+	color: ${props => props.theme.palette.primary.main};
+	text-transform: none;
+	text-decoration: none;
 `;
 
 export const FootertContactPhone = styled(Typography)`
 	a {
-		font-weight: 700;
-		font-size: 24px;
+		font-weight: ${props => props.theme.typography.fontWeightBold};
+		font-size: ${props => props.theme.typography.subtitle1.fontSize};
 		line-height: 29px;
-		color: #242424;
+		color: ${props => props.theme.palette.primary.main};
 		text-decoration: none;
 		letter-spacing: -0.3px;
 		:hover {
@@ -68,22 +52,22 @@ export const FootertWrapperRights = styled(Box)`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	minheight: 70px;
-	padding: 23px 0 25px;
-	background: #FFFFFF;
+	min-height: 70px;
+	padding: 25px 0 25px;
+	background: ${props => props.theme.palette.white};
 `;
 
 export const FootertWrapperRightsFz16 = styled(Typography)`
-	font-weight: 400;
-	font-size: 16px;
+	font-weight: ${props => props.theme.typography.fontWeightRegular};
+	font-size: ${props => props.theme.typography.h4.fontSize};
 	line-height: 140%;
-	color: #242424;
+	color:  ${props => props.theme.palette.primary.main};
 `;
 
 export const FootertWrapperRightsFz14 = styled(FootertWrapperRightsFz16)`
 	position: relative;
-	left: -57px;
-	font-size: 14px;
+	left: -59px;
+	font-size: ${props => props.theme.typography.h5.fontSize};
 `;
 
 export const FootertWrapperRightsIcoContainer = styled(FootertWrapperRightsFz16)`
@@ -92,4 +76,14 @@ export const FootertWrapperRightsIcoContainer = styled(FootertWrapperRightsFz16)
 	grid-template-rows: auto;
 	column-gap: 15px;
 	align-items: center;
+
+	a {
+		display: block;
+		width: 20px;
+		height: 20px;
+	}
+	img {
+		max-width: 100%;
+		max-height: 100%;
+	}
 `;

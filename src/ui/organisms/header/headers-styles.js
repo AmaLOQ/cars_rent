@@ -18,9 +18,9 @@ export const GridContainerButtons = styled(Box)`
 	position: relative;
 	display: grid;
 	grid-template-columns: 90px 132px 50px;
+	column-gap: 6px;
 	align-items: center;
 	justify-items: start;
-	column-gap: 6px;
 `;
 
 export const SwitcherWrapper = styled(Box)`

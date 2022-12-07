@@ -1,7 +1,7 @@
 import React from "react";
 import { CssBaseline,  } from "@mui/material";
 import mainCar from "../../img/Main_car.png"
-import OrderBtn from "../../atoms/buttons/order-call-btn";
+import {GradientButton} from '../../atoms/buttons/gradient-button/gradient-button'
 import { RingPromoSlide, EmptyRingPromoSlide } from "../../atoms/rings-promo-slide/ring-promo-slide";
 import {
 	PromoWrapper,
@@ -19,7 +19,7 @@ export default function Main() {
 				<PromoTitle>Аренда автомобилей</PromoTitle>
 				<PromoRing><img src={mainCar} alt="Авто" /></PromoRing>
 				<PromoDescr>Мы объединили предложения частных автовладельцев по всей России</PromoDescr>
-				<OrderBtnWrapper><OrderBtn/></OrderBtnWrapper>
+				<OrderBtnWrapper><GradientButton text="заказать звонок"/></OrderBtnWrapper>
 				<PromoRingSlideWrapper>
 					<RingPromoSlide/>
 					<EmptyRingPromoSlide/>
