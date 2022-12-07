@@ -9,7 +9,6 @@ import { Footer } from "../ui/organisms/footer/footer";
 import { LinksGroup } from "../ui/molecules/promo-links-group/promo-links-group";
 
 
-
 function App() {
   return (
       <ThemeProvider theme={theme}>
