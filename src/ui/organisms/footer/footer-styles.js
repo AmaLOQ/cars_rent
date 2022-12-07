@@ -71,9 +71,7 @@ export const FootertWrapperRightsFz14 = styled(FootertWrapperRightsFz16)`
 `;
 
 export const FootertWrapperRightsIcoContainer = styled(FootertWrapperRightsFz16)`
-	display: grid;
-	grid-template-columns: repeat(3, auto);
-	grid-template-rows: auto;
+	display: flex;
 	column-gap: 15px;
 	align-items: center;
 
