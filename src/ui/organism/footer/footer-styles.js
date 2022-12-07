@@ -1,16 +1,15 @@
 import { Box, styled, Typography } from "@mui/material";
 
-const FootertWrapperNaw = styled(Box)`
+export const FootertWrapperNaw = styled(Box)`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	minheight: 159px;
 	padding: 47px 0 49px;
-	border-bottom: 1px solid #242424;
-	background: #FFFFFF;
+	border-bottom: 1px solid ${props => props.theme.palette.primary.main};
+	background: ${props => props.theme.palette.white};
 `;
 
-const FootertNav = styled(Box)`
+export const FootertNav = styled(Box)`
 	display: grid;
 	grid-template-columns: repeat(3, auto);
 	grid-template-rows: repeat(2, auto);
@@ -19,7 +18,7 @@ const FootertNav = styled(Box)`
 	grid-auto-flow: row;
 `;
 
-const FootertNavTopic = styled(Typography)`
+export const FootertNavTopic = styled(Typography)`
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 20px;
@@ -41,17 +40,17 @@ const FootertNavTopic = styled(Typography)`
 	}
 `;
 
-const FootertContact = styled(Box)`
+export const FootertContact = styled(Box)`
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: repeat(2, auto);
 	gap: 10px;
 `;
 
-const FootertContactCall = styled(FootertNavTopic)`
+export const FootertContactCall = styled(FootertNavTopic)`
 `;
 
-const FootertContactPhone = styled(Typography)`
+export const FootertContactPhone = styled(Typography)`
 	a {
 		font-weight: 700;
 		font-size: 24px;
@@ -65,7 +64,7 @@ const FootertContactPhone = styled(Typography)`
 	}
 `;
 
-const FootertWrapperRights = styled(Box)`
+export const FootertWrapperRights = styled(Box)`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -74,36 +73,23 @@ const FootertWrapperRights = styled(Box)`
 	background: #FFFFFF;
 `;
 
-const FootertWrapperRightsFz16 = styled(Typography)`
+export const FootertWrapperRightsFz16 = styled(Typography)`
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 140%;
 	color: #242424;
 `;
 
-const FootertWrapperRightsFz14 = styled(FootertWrapperRightsFz16)`
+export const FootertWrapperRightsFz14 = styled(FootertWrapperRightsFz16)`
 	position: relative;
 	left: -57px;
 	font-size: 14px;
 `;
 
-const FootertWrapperRightsIcoContainer = styled(FootertWrapperRightsFz16)`
+export const FootertWrapperRightsIcoContainer = styled(FootertWrapperRightsFz16)`
 	display: grid;
 	grid-template-columns: repeat(3, auto);
 	grid-template-rows: auto;
 	column-gap: 15px;
 	align-items: center;
 `;
-
-export {
-	FootertWrapperNaw,
-	FootertNav,
-	FootertNavTopic,
-	FootertContact,
-	FootertContactCall,
-	FootertContactPhone,
-	FootertWrapperRights,
-	FootertWrapperRightsFz14,
-	FootertWrapperRightsFz16,
-	FootertWrapperRightsIcoContainer,
-}
