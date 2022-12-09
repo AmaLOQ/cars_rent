@@ -74,7 +74,6 @@ export const FootertWrapperRightsIcoContainer = styled(FootertWrapperRightsFz16)
 	display: flex;
 	column-gap: 15px;
 	align-items: center;
-
 	a {
 		display: block;
 		width: 20px;

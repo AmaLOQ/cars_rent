@@ -1,5 +1,5 @@
 import React from "react";
-import mainCar from "../../img/Main-car.png";
+import { MainCarImg } from "../../atoms/images-component/images-component";
 import { GradientButton } from "../../atoms/buttons/gradient-button/gradient-button";
 import { RingPromoSlide, EmptyRingPromoSlide } from "../../atoms/rings-promo-slide/ring-promo-slide";
 import { PromoWrapper, PromoTitle, PromoRing, PromoDescription, PromoRingSlideWrapper, PromoBtnWrapper} from "./promo-styles";
@@ -7,7 +7,7 @@ import { PromoWrapper, PromoTitle, PromoRing, PromoDescription, PromoRingSlideWr
 export const Promo = () => 
 	<PromoWrapper>
 		<PromoTitle>Аренда автомобилей</PromoTitle>
-		<PromoRing><img src={mainCar} alt="Авто" /></PromoRing>
+		<PromoRing><MainCarImg/></PromoRing>
 		<PromoDescription>Мы объединили предложения частных автовладельцев по всей России</PromoDescription>
 		<PromoBtnWrapper><GradientButton text="заказать звонок"/></PromoBtnWrapper>
 		<PromoRingSlideWrapper>

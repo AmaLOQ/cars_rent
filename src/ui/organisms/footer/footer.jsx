@@ -3,7 +3,7 @@ import { linksDataFooter } from "./links-data";
 import { Link } from "../../atoms/link/link";
 import { LinksGroup } from "../../molecules/promo-links-group/promo-links-group";
 import { IconGroup } from "../../molecules/icon-group/icon-group";
-import { IconData } from "../../molecules/icon-group/icon-group-data";
+import { IconData } from "./icons-data";
 import { FootertWrapperNaw, FootertNav, FootertContact, FootertContactCall, FootertContactPhone, FootertWrapperRights, FootertWrapperRightsFz14,
 	FootertWrapperRightsFz16,
 	FootertWrapperRightsIcoContainer,
