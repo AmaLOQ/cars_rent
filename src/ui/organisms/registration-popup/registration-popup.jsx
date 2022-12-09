@@ -9,16 +9,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { RadioGroup } from '../../molecules/radio-button-group/radio-group';
 import { ButtonBlack } from '../../atoms/buttons/black-button/black-button';
 import { InputComponent } from '../../atoms/input/input';
-import {
-	PaperRegistration,
-	BoxPopupDescr,
-	BoxInputName,
-	BoxInputSurname,
-	DataForSingIn,
-	DataForSingInBox,
-	AutorizationBox,
-	Autorization,
-	CheckboxWrapperReg
+import {PaperRegistration, BoxPopupDescr, BoxInputName, BoxInputSurname, DataForSingIn, DataForSingInBox, AutorizationBox, Autorization, CheckboxWrapperReg
 } from './registration-popup-style';
 
 const radioData = [

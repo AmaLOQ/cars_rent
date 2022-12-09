@@ -1,5 +1,5 @@
 import React from "react";
-import mainCar from "../../img/Main_car.png";
+import mainCar from "../../img/Main-car.png";
 import { GradientButton } from "../../atoms/buttons/gradient-button/gradient-button";
 import { RingPromoSlide, EmptyRingPromoSlide } from "../../atoms/rings-promo-slide/ring-promo-slide";
 import { PromoWrapper, PromoTitle, PromoRing, PromoDescription, PromoRingSlideWrapper, PromoBtnWrapper} from "./promo-styles";

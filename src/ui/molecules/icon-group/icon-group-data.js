@@ -3,4 +3,4 @@ import viber from '../../ico/viber.svg';
 import mail from '../../ico/mail.svg';
 
 
-export const iconData = [telegram, viber, mail]
+export const IconData = [telegram, viber, mail]
