@@ -5,6 +5,7 @@ export const HeaderWrapper = styled(Box)`
 	min-height: 72px;
 	border-bottom: 1px solid ${props => props.theme.palette.primary.main};
 	justify-content: space-between;
+	align-items: center;
 `;
 
 export const GridContainerNaw = styled(Box)`
@@ -33,7 +34,7 @@ export const HeaderLogo = styled(Box)`
 	display: flex;
 	width: 151px;
 	height: 35px;
-	align-items: center;
+	align-self: center;
 	img {
 		max-width: 100%;
 		max-height: 100%;
