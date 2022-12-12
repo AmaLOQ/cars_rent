@@ -15,7 +15,7 @@ import {PaperRegistration, BoxPopupDescr, BoxInputName, BoxInputSurname, DataFor
 
 export const PopupRegistrationkDesk = () =>
 	<Overflow>
-		<PaperRegistration>
+		<PaperRegistration onClick={(e) => e.stopPropagation()}>
 			<StyledIconButton><CloseIcon fontSize="medium" color="primary" /></StyledIconButton>
 			<PopupTitle>Регистрация аккаунта</PopupTitle>
 			<BoxPopupDescr><PopupDescr>Для того, чтобы войти или создать аккаунт</PopupDescr></BoxPopupDescr>
