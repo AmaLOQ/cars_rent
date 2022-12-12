@@ -9,13 +9,9 @@ import CloseIcon from '@mui/icons-material/Close';
 import { RadioGroup } from '../../molecules/radio-button-group/radio-group';
 import { ButtonBlack } from '../../atoms/buttons/black-button/black-button';
 import { InputComponent } from '../../atoms/input/input';
+import { radioData } from './radio-data';
 import {PaperRegistration, BoxPopupDescr, BoxInputName, BoxInputSurname, DataForSingIn, DataForSingInBox, AutorizationBox, Autorization, CheckboxWrapperReg
 } from './registration-popup-style';
-
-const radioData = [
-	{ label: 'Легковые авто', defaultChecked: true },
-	{ label: 'Грузовые авто', defaultChecked: false },
-]
 
 export const PopupRegistrationkDesk = () =>
 	<Overflow>
