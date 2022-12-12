@@ -6,7 +6,7 @@ import { CssBaseline } from "@mui/material";
 import {StyledContainer} from "../ui/container";
 import {theme} from "../ui/styles";
 import { Footer } from "../ui/organisms/footer/footer";
-import {KeepMountedModal} from "../ui/molecules/registration-modal/registration-modal";
+
 
 
 function App() {
@@ -17,7 +17,6 @@ function App() {
             <Header/>
             <Promo/>
             <Footer/>
-            {/* <KeepMountedModal/> */}
           </StyledContainer>
         </CssBaseline>
       </ThemeProvider>
