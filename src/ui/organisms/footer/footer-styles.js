@@ -1,6 +1,6 @@
 import { Box, styled, Typography } from "@mui/material";
 
-export const FootertWrapperNaw = styled(Box)`
+export const FootertWrapperNav = styled(Box)`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
