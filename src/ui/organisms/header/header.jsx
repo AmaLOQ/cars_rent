@@ -24,9 +24,10 @@ export const Header = () => {
 			</GridContainerNaw>
 			<GridContainerButtons>
 				<ButtonBlack text="войти"/>
-				<ButtonBlack text="регистрация"/>
+				<ButtonBlack onClick={() => setOpenReg(true)} text="регистрация"/>
 				<SwitcherWrapper><CustomSwitcher/></SwitcherWrapper>
 			</GridContainerButtons>
+			<BasicModal open={openRegistration} content={<PopupRegistrationkDesk/>} onClose={() => setOpenReg(false)}/>
 		</HeaderWrapper>
 	)
 }
