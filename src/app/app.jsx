@@ -1,16 +1,22 @@
 import React from "react";
+import {Header} from "../ui/organisms/header/header";
+import {Promo} from "../ui/organisms/promo/promo";
 import { ThemeProvider } from "@emotion/react";
-import {theme} from "../ui/styles";
 import { CssBaseline } from "@mui/material";
 import {StyledContainer} from "../ui/container";
-import { HomePage } from "../ui/templates/Home-page";
+import {theme} from "../ui/styles";
 
-
-export const App = () =>  
+function App() {
+  return (
       <ThemeProvider theme={theme}>
         <CssBaseline>
           <StyledContainer>
-            <HomePage/>
+            <Header/>
+            <Promo/>
           </StyledContainer>
         </CssBaseline>
       </ThemeProvider>
+  );
+}
+
+export default App;

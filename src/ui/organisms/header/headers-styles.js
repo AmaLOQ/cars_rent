@@ -5,7 +5,6 @@ export const HeaderWrapper = styled(Box)`
 	min-height: 72px;
 	border-bottom: 1px solid ${props => props.theme.palette.primary.main};
 	justify-content: space-between;
-	align-items: center;
 `;
 
 export const GridContainerNaw = styled(Box)`
@@ -19,9 +18,9 @@ export const GridContainerButtons = styled(Box)`
 	position: relative;
 	display: grid;
 	grid-template-columns: 90px 132px 50px;
-	column-gap: 6px;
 	align-items: center;
 	justify-items: start;
+	column-gap: 6px;
 `;
 
 export const SwitcherWrapper = styled(Box)`
@@ -34,7 +33,7 @@ export const HeaderLogo = styled(Box)`
 	display: flex;
 	width: 151px;
 	height: 35px;
-	align-self: center;
+	align-items: center;
 	img {
 		max-width: 100%;
 		max-height: 100%;
