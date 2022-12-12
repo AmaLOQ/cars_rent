@@ -19,18 +19,11 @@ export const PromoTitle = styled(Typography)`
 `;
 
 export const PromoRing = styled(Box)`
-	position: relative;
 	grid-column: 2/3;
 	grid-row: 1/4;
 	justify-self: end;
-	width: 456px;
-	height: 455px;
-	background: linear-gradient(269.87deg, #014369 -17.97%, #289FCA 101.14%);
-	border-radius: 100%;
-	img{
-		position: relative;
-		top: 50px;
-		right: 252px;
+	img {
+		max-width: 100%;
 	}
 `;
 

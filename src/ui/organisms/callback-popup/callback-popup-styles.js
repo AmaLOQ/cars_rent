@@ -2,19 +2,21 @@ import { styled, Typography, Box, IconButton} from '@mui/material';
 import Paper from '@mui/material/Paper';
 
 export const Overflow = styled('div')`
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background: rgba(36, 36, 36, 0.4);
+	z-index: 5;
+	transform: scale(1);
 `;
 
 export const PaperCallback = styled(Paper)`
 	position: relative;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	width: 380px;
 	height: 360px;
 	padding: 40px 30px 50px;
