@@ -66,6 +66,12 @@ export const theme = createTheme({
 			fontSize: '12px',
 		}
 	},
+	media: {
+		lg: '(max-width: 1200px)',
+		md: '(max-width: 991.9px)',
+		sm: '(max-width: 767.9px)',
+		phone: '(max-width: 576px)',
+	},
 	customComponents: {
 		buttons: {
 			bigBlackBtn: {

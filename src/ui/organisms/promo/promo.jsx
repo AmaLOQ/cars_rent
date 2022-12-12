@@ -12,14 +12,16 @@ export const Promo = () => {
 	return(
 		<PromoWrapper>
 		<PromoTitle>Аренда автомобилей</PromoTitle>
-		<PromoRing><MainCarImg/></PromoRing>
+		<PromoRing>
+			<MainCarImg/>
+			<PromoRingSlideWrapper>
+				<RingPromoSlide/>
+				<EmptyRingPromoSlide/>
+				<EmptyRingPromoSlide/>
+			</PromoRingSlideWrapper>
+		</PromoRing>
 		<PromoDescription>Мы объединили предложения частных автовладельцев по всей России</PromoDescription>
 		<PromoBtnWrapper><GradientButton onClick={() => setOpen(true)} text="заказать звонок"/></PromoBtnWrapper>
-		<PromoRingSlideWrapper>
-			<RingPromoSlide/>
-			<EmptyRingPromoSlide/>
-			<EmptyRingPromoSlide/>
-		</PromoRingSlideWrapper>
 		<BasicModal open={openCallbackPhone} content={<PopupCallbackDesk/>} onClose={() => setOpen(false)}/>
 	</PromoWrapper>
 	)

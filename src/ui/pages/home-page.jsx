@@ -12,8 +12,8 @@ export const HomePage = () =>
 		<StyledContainer>
 			<CssBaseline>
 				<Header/>
-				<Promo/>
-				<Footer/>
+				{/* <Promo/>
+				<Footer/> */}
 			</CssBaseline>
 		</StyledContainer>
 	</ThemeProvider>

@@ -15,6 +15,9 @@ export const StyledActiveMenuBtn = styled(Button)`
 		width: 16px;
 		height: 16px;
 	}
+	@media ${props => props.theme.media.md} {
+		font-size: ${props => props.theme.typography.button.fontSize} ;
+	}
 `;
 
 export const StyledMenuActive = styled(Menu)`
@@ -25,4 +28,5 @@ export const StyledMenuActive = styled(Menu)`
 
 export const StyledMenuItemActive = styled(MenuItem)`
 	padding: 6.5px 13px;
+
 `;
