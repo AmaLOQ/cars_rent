@@ -11,7 +11,7 @@ import { InputComponent } from '../../atoms/input/input';
 
 export const PopupCallbackMob = () =>
 	<Overflow>
-		<PaperCallbackMob>
+		<PaperCallbackMob onClick={e => e.stopPropagation()}>
 			<StyledIconButton><CloseIcon fontSize="medium" color="primary" /></StyledIconButton>
 			<PopupTitle>Обратный звонок</PopupTitle>
 			<BoxPopupDescr><PopupDescr>Мы свяжемся с вами в ближайшее время!</PopupDescr></BoxPopupDescr>
