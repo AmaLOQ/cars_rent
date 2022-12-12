@@ -20,7 +20,7 @@ const radioData = [
 
 export const PopupRegistrationMob = () =>
 	<Overflow>
-		<PaperRegistrationMob>
+		<PaperRegistrationMob onClick={(e) => e.stopPropagation()}>
 			<StyledIconButton><CloseIcon fontSize="medium" color="primary" /></StyledIconButton>
 			<PopupTitel22>Регистрация аккаунта</PopupTitel22>
 			<BoxPopupDescr><PopupDescr>Для того, чтобы войти или создать аккаунт</PopupDescr></BoxPopupDescr>
