@@ -1,7 +1,7 @@
-import * as React from 'react';
-import { StyledActiveMenuBtn, StyledMenuActive, StyledMenuItemActive} from './menu-active-style';
-import { Link } from '../link/link';
-import Arrow from '@mui/icons-material/KeyboardArrowRight';
+import * as React from "react";
+import { StyledActiveMenuBtn, StyledMenuActive, StyledMenuItemActive} from "./menu-active-style";
+import { Link } from "../link/link";
+import Arrow from "@mui/icons-material/KeyboardArrowRight";
 
 
 export const PositionedMenu = () => {
