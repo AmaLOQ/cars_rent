@@ -1,10 +1,20 @@
 import {styled, Box, Typography,} from "@mui/material";
-import { PaperCallback } from "../../organisms/callback-popup/callback-popup-styles";
+import { CallbackOverflow, PaperCallback } from "../../organisms/callback-popup/callback-popup-styles";
+
+export const RegistrationOverflow = styled(CallbackOverflow)`
+	@media ${props => props.theme.media.landscape} {
+		align-items: start;
+	}
+`;
 
 export const PaperRegistration = styled(PaperCallback)`
 	width: 380px;
 	height: 680px;
 	padding: 40px 30px 50px;
+	@media ${props => props.theme.media.landscape} {
+		position: absolute;
+		top: 2%;
+	}
 `;
 
 export const BoxPopupDescr = styled(Box)`

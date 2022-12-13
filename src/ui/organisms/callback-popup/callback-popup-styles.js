@@ -1,12 +1,12 @@
 import { styled, Typography, Box, IconButton} from '@mui/material';
 import Paper from '@mui/material/Paper';
 
-export const Overflow = styled('div')`
+export const CallbackOverflow = styled('div')`
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -51,8 +51,12 @@ export const BoxPopupInput = styled(Box)`
 
 export const StyledIconButton = styled(IconButton)`
 	position: absolute;
-	top: 0px;
-	right: 1px;
+	top: 5px;
+	right: 7px;
+	svg {
+		width: 18px;
+		height: 18px;
+	}
 `;
 
 

@@ -1,25 +1,41 @@
 import { Box, styled, Typography} from "@mui/material";
 import { FootertWrapperRightsIcoContainer } from "../footer/footer-styles";
-import { Overflow } from "../callback-popup/callback-popup-styles";
+import { CallbackOverflow } from "../callback-popup/callback-popup-styles";
 
-export const BurgerOverflow = styled(Overflow)`
-	display: ${({open}) => open ? 'block' : 'none' };
+export const BurgerOverflow = styled(CallbackOverflow)`
+	display: ${({open}) => open ? 'flex' : 'none' };
+	@media ${props => props.theme.media.md} {
+		position: fixed;
+	}
+	@media ${props => props.theme.media.landscape} {
+		align-items: start;
+		position: absolute;
+		height: 980px;
+	}
 `;
 
 export const BurgerPaper = styled(Box)`
 	position: absolute;
-	top: 0;
-	transition: all 0.6s;
-	left: ${({open}) => open ? '0px' : '-100%' };
+	transition: 1s all;
 	display: grid;
+	min-height: 667px;
+	width: 100vh;
+	padding: 0 9px 0 20px;
 	grid-template-columns: 1fr;
-	grid-template-rows:  55px minmax(511px, auto) minmax(101px, auto);
+	grid-template-rows:  55px minmax(511px, auto) 101px;
 	overflow: hidden;
 	grid-auto-flow: row;
-	height: 667px;
-	width: 375px;
-	padding: 0 15px;
 	background-color: ${props => props.theme.palette.white};
+	@media ${props => props.theme.media.md} {
+		width: 70%;
+	} 
+	@media ${props => props.theme.media.phone} {
+		width: 100%;
+		height: 100%;
+	}
+	@media ${props => props.theme.media.landscape} {
+		top: 2%;
+	}
 `;
 
 export const BurgerMenuHeader = styled(Box)`
@@ -53,9 +69,9 @@ export const BurgerMenuMain = styled(Box)`
 	img {
 		grid-column: 1/3;
 		display: inline-block;
-		position: relative;
-		top: -12px;
-		left: 53px;
+		position: absolute;
+		bottom: 14px;
+		right: -17px;
 	}
 `;
 
@@ -72,8 +88,8 @@ export const Nav = styled(Box)`
 export const BurgerMenuFooter = styled(Box)`
 	display:  grid;
 	padding: 20px 0 40px;
-	grid-template-columns: auto auto;
-	grid-template-rows: repeat(2, 22px);
+	grid-template-columns: 1fr auto;
+	grid-template-rows: repeat(2, 21px);
 `;
 
 export const FootertWrapperIcons = styled(FootertWrapperRightsIcoContainer)`
@@ -84,7 +100,7 @@ export const FooterCallUs = styled(Typography)`
 	font-size: ${props => props.theme.typography.body1.fontSize};
 	color: ${props => props.theme.palette.primary.main};
 	line-height: 15px;
-	justify-self: end;
+	justify-self: start;
 `;
 
 export const FooterPhone = styled(Typography)`

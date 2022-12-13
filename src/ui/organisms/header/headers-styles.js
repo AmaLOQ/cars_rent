@@ -6,6 +6,9 @@ export const HeaderWrapper = styled(Box)`
 	border-bottom: 1px solid ${props => props.theme.palette.primary.main};
 	justify-content: space-between;
 	align-items: center;
+	@media ${props => props.theme.media.sm} {
+		min-height: 55px;
+	}
 `;
 
 export const GridContainerNav = styled(Box)`
@@ -22,7 +25,7 @@ export const GridContainerNav = styled(Box)`
 export const GridContainerButtons = styled(Box)`
 	position: relative;
 	display: grid;
-	grid-template-columns: 90px auto auto auto;
+	grid-template-columns: 90px auto 45px auto;
 	column-gap: 6px;
 	align-items: center;
 	justify-items: start;
@@ -52,6 +55,7 @@ export const BurgerWrapper = styled(Box)`
 	height: 25px;
 	justify-content: center;
 	align-items: center;
+	margin-left: 7px;
 	}
 `;
 

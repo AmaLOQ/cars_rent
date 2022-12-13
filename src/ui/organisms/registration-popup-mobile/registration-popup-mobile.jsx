@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { CheckboxButton } from '../../atoms/checkbox/checkbox';
-import { Overflow } from '../callback-popup/callback-popup-styles';
+import { RegistrationOverflow } from '../registration-popup/registration-popup-style';
 import { PaperRegistrationMob, DataForSingInBox, PostStateBox, AutorzationBox40, Autorzation12, PopupTitel22 } from './registration-popup-mobile-styles';
 import { BoxInputName, BoxInputSurname, DataForSingIn } from '..//registration-popup/registration-popup-style';
 import { BoxPopupDescr, PopupDescr} from '../callback-popup/callback-popup-styles';
@@ -9,7 +9,7 @@ import { RadioGroup } from '../../molecules/radio-button-group/radio-group';
 import { ButtonBlackWrapper } from '../../atoms/buttons/black-button/black-button-style';
 import { ButtonSquare } from '../../atoms/buttons/square-btn/square-button';
 import { StyledIconButton } from '../callback-popup/callback-popup-styles';
-import CloseIcon from '@mui/icons-material/Close';
+import {ReactComponent as Closer} from '../../ico/closer.svg'
 import { ButtonBlack } from '../../atoms/buttons/black-button/black-button';
 import { InputComponent } from '../../atoms/input/input';
 
@@ -19,9 +19,9 @@ const radioData = [
 ]
 
 export const PopupRegistrationMob = () =>
-	<Overflow>
+	<RegistrationOverflow>
 		<PaperRegistrationMob onClick={(e) => e.stopPropagation()}>
-			<StyledIconButton><CloseIcon fontSize="medium" color="primary" /></StyledIconButton>
+			<StyledIconButton><Closer/></StyledIconButton>
 			<PopupTitel22>Регистрация аккаунта</PopupTitel22>
 			<BoxPopupDescr><PopupDescr>Для того, чтобы войти или создать аккаунт</PopupDescr></BoxPopupDescr>
 			<BoxInputName><InputComponent placeholder="Имя" type="text" /></BoxInputName>
@@ -37,4 +37,4 @@ export const PopupRegistrationMob = () =>
 				<ButtonSquare text="Войти" />
 			</AutorzationBox40>
 		</PaperRegistrationMob>
-	</Overflow>
+	</RegistrationOverflow>

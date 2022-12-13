@@ -1,8 +1,11 @@
 import {React, useState} from "react";
 import { MainCarImg } from "../../atoms/images-component/main-car";
+import { BubleImg } from "../../atoms/images-component/bubles";
 import { GradientButton } from "../../atoms/buttons/gradient-button/gradient-button";
 import { RingPromoSlide, EmptyRingPromoSlide } from "../../atoms/rings-promo-slide/ring-promo-slide";
-import { PromoWrapper, PromoTitle, PromoRing, PromoDescription, PromoRingSlideWrapper, PromoBtnWrapper} from "./promo-styles";
+import { PromoWrapper, PromoTitle, PromoRing, PromoDescription, PromoRingSlideWrapper, PromoBtnWrapper, 
+	PromoDescriptionWrapper, BubleBigPromoWrapper, BubleMiddlePromoWrapper, BubleMiddleSecondPromoWrapper,
+	BubleSmallPromoWrapper} from "./promo-styles";
 import { PopupCallbackDesk } from "../callback-popup/callback-popup";
 import { BasicModal } from "../../molecules/basic-modal/basic-modal";
 
@@ -10,7 +13,7 @@ export const Promo = () => {
 	const [openCallbackPhone, setOpen] = useState(false)
 
 	return(
-		<PromoWrapper>
+	<PromoWrapper>
 		<PromoTitle>Аренда автомобилей</PromoTitle>
 		<PromoRing>
 			<MainCarImg/>
@@ -20,9 +23,14 @@ export const Promo = () => {
 				<EmptyRingPromoSlide/>
 			</PromoRingSlideWrapper>
 		</PromoRing>
-		<PromoDescription>Мы объединили предложения частных автовладельцев по всей России</PromoDescription>
+		<PromoDescriptionWrapper><PromoDescription>Мы объединили предложения частных автовладельцев по всей России</PromoDescription></PromoDescriptionWrapper>
 		<PromoBtnWrapper><GradientButton onClick={() => setOpen(true)} text="заказать звонок"/></PromoBtnWrapper>
 		<BasicModal open={openCallbackPhone} content={<PopupCallbackDesk/>} onClose={() => setOpen(false)}/>
+		<BubleBigPromoWrapper><BubleImg/></BubleBigPromoWrapper>
+		<BubleMiddlePromoWrapper><BubleImg/></BubleMiddlePromoWrapper>
+		<BubleMiddleSecondPromoWrapper><BubleImg/></BubleMiddleSecondPromoWrapper>
+		<BubleMiddleSecondPromoWrapper><BubleImg/></BubleMiddleSecondPromoWrapper>
+		<BubleSmallPromoWrapper><BubleImg/></BubleSmallPromoWrapper>
 	</PromoWrapper>
 	)
 }
