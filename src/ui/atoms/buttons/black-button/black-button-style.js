@@ -18,9 +18,6 @@ export const StyledButtonBlack = styled(Button)`
 	:hover {
 		background-color: ${({theme} )=> theme.palette.primary.light};
 	}
-	@media ${props => props.theme.media.md} {
-		font-size: ${props => props.theme.typography.body1.fontSize} ;
-	}
 `;
 
 export const ButtonBlackWrapper = styled(Box)`

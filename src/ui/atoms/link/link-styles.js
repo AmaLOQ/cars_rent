@@ -15,7 +15,4 @@ export const StyledLink = styled(Link)`
 		: 'none'};
 	color: ${props => props.theme.palette.primary.main};
 
-	@media ${props => props.theme.media.md} {
-		font-size: ${props => props.theme.typography.button.fontSize} ;
-	}
 `;

@@ -10,12 +10,12 @@ import {CustomSwitcher} from "../../atoms/switcher/switcher-desktop";
 import {PositionedMenu} from "../../atoms/menu-active/menu-active";
 import { BasicModal } from "../../molecules/basic-modal/basic-modal";
 import { PopupRegistrationkDesk } from "../registration-popup/registration-popup";
-import {HeaderLogo, GridContainerNav, GridContainerButtons, HeaderWrapper, SwitcherWrapper, Nav,
-	BlackButtonWrapper, BurgerWrapper
-} from "./headers-styles";
+import {HeaderLogo, GridContainerNav, GridContainerButtons, HeaderWrapper, SwitcherWrapper, Nav, BlackButtonWrapper, BurgerWrapper} from "./headers-styles";
+import { BurgerMenu } from "../burger-menu/burger-menu";
 
 export const Header = () => {
 	const [openRegistration, setOpenReg] = useState(false);
+	const [opneBurgerMenu, setOpenBurger] = useState(false);
 
 	return(
 		<HeaderWrapper>
@@ -30,9 +30,10 @@ export const Header = () => {
 				<BlackButtonWrapper><ButtonBlack text="войти"/></BlackButtonWrapper>
 				<BlackButtonWrapper><ButtonBlack onClick={() => setOpenReg(true)} text="регистрация"/></BlackButtonWrapper>
 				<SwitcherWrapper><CustomSwitcher/></SwitcherWrapper>
-				<BurgerWrapper><IconButton color="primary"><BurgerIcon/></IconButton></BurgerWrapper>
+				<BurgerWrapper><IconButton onClick={() => setOpenBurger(true)} color="primary"><BurgerIcon/></IconButton></BurgerWrapper>
 			</GridContainerButtons>
 			<BasicModal open={openRegistration} content={<PopupRegistrationkDesk/>} onClose={() => setOpenReg(false)}/>
+			<BurgerMenu open={opneBurgerMenu} onClose={() => setOpenBurger(false)}/>
 		</HeaderWrapper>
 	)
 }

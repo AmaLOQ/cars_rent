@@ -1,5 +1,5 @@
 import {React, useState} from "react";
-import { MainCarImg } from "../../atoms/images-component/images-component";
+import { MainCarImg } from "../../atoms/images-component/main-car";
 import { GradientButton } from "../../atoms/buttons/gradient-button/gradient-button";
 import { RingPromoSlide, EmptyRingPromoSlide } from "../../atoms/rings-promo-slide/ring-promo-slide";
 import { PromoWrapper, PromoTitle, PromoRing, PromoDescription, PromoRingSlideWrapper, PromoBtnWrapper} from "./promo-styles";

@@ -1,41 +1,44 @@
 import React from "react";
-import { Paper } from "@mui/material";
+import { IconButton } from "@mui/material";
 import { LinksGroup } from "../../molecules/promo-links-group/promo-links-group";
 import { linksDataBurgerMenu } from "./burger-links-data";
 import { PositionedMenu } from "../../atoms/menu-active/menu-active";
 import { iconDataBurgerMenu } from "./burger-icons-data";
 import { IconGroup } from "../icon-group/icon-group";
-import { HeaderLogo } from "../header/headers-styles";
 import { Link } from "../../atoms/link/link";
-import {ReactComponent as BurgerCar} from "../../img/burger_car.png"
-import {ReactComponent as Logo} from "../../ico/logo.svg"
-import { BurgerPaper, BurgerMenuHeader} from "./burger-menu-styles";
+import { ButtonBlack } from "../../atoms/buttons/black-button/black-button";
+import { BurgerCarImg } from "../../atoms/images-component/burger-car";
+import {ReactComponent as Logo} from "../../ico/logo.svg";
+import {ReactComponent as Closer} from "../../ico/closer.svg";
+import { BurgerOverflow, BurgerPaper, BurgerMenuHeader, BurgerLogoWrapper, BurgerMenuMain, Nav,
+ BurgerMenuFooter, FootertWrapperIcons, FooterCallUs, FooterPhone} from "./burger-menu-styles";
 
-export const BurgerMenu = () => {
+export const BurgerMenu = ({open, onClose, ...props}) => {
 
 	return(
-		<BurgerPaper>
-			<BurgerMenuHeader>
-				<HeaderLogo>sdfsdfsdf</HeaderLogo>
-			</BurgerMenuHeader>
-			{/* <BurgerMenuHeader>
-				<HeaderLogo></HeaderLogo>
-				<HeaderMenuCloser></HeaderMenuCloser>
-			</BurgerMenuHeader>
-			<BurgerMenuMain>
-				<ButtonsWrapper></ButtonsWrapper>
-				<ButtonsWrapper></ButtonsWrapper>
-				<BurgerNav>
-					<PositionedMenu/>
-					<LinksGroup linksData={linksDataBurgerMenu}/>
-				</BurgerNav>
-				<BurgerCarWrapper><BurgerCar/></BurgerCarWrapper>
-			</BurgerMenuMain>
-			<BurgerMenuFooter>
-				<IconGroup iconData={iconDataBurgerMenu}/>
-				<ContactUs>Связаться с нами</ContactUs>
-				<FooterBurgerContactPhone><Link type="tel" isHash>+7 495 120-80-70</Link></FooterBurgerContactPhone>
-			</BurgerMenuFooter> */}
-		</BurgerPaper>
+		<BurgerOverflow open={open} onClick={onClose}>
+			<BurgerPaper open={open} onClick={e => e.stopPropagation()} >
+				<BurgerMenuHeader>
+					<BurgerLogoWrapper><Logo/></BurgerLogoWrapper>
+					<IconButton onClick={onClose}><Closer/></IconButton>
+				</BurgerMenuHeader>
+				<BurgerMenuMain>
+					<ButtonBlack color="" text="Войти"></ButtonBlack>
+					<ButtonBlack text="регистрация"></ButtonBlack>
+					<Nav>
+						<PositionedMenu/>
+						<LinksGroup linksData={linksDataBurgerMenu}/>
+					</Nav>
+					<BurgerCarImg/>
+				</BurgerMenuMain>
+				<BurgerMenuFooter>
+					<FootertWrapperIcons>
+						<IconGroup isHash iconData={iconDataBurgerMenu}/>
+					</FootertWrapperIcons>
+					<FooterCallUs>Связаться с нами</FooterCallUs>
+					<FooterPhone><Link type="tel" isHash>+7 495 120-80-70</Link></FooterPhone>
+				</BurgerMenuFooter>
+			</BurgerPaper>
+		</BurgerOverflow>
 	)
 }

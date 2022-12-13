@@ -12,7 +12,6 @@ export const Overflow = styled('div')`
 	align-items: center;
 	background: rgba(36, 36, 36, 0.4);
 	z-index: 5;
-	transform: scale(1);
 `;
 
 export const PaperCallback = styled(Paper)`

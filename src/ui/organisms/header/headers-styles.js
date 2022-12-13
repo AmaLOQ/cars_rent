@@ -29,6 +29,9 @@ export const GridContainerButtons = styled(Box)`
 
 	@media ${props => props.theme.media.md} {
 		grid-template-columns: auto auto 40px;
+		button {
+			font-size: ${props => props.theme.typography.body1.fontSize};
+		}
 	}
 	@media ${props => props.theme.media.sm} {
 		grid-template-columns: auto auto;
@@ -83,6 +86,9 @@ export const Nav = styled(Box)`
 
 	@media ${props => props.theme.media.md} {
 		column-gap: 15px;
+		a {
+			font-size: ${props => props.theme.typography.button.fontSize};
+		}
 	}
 	@media ${props => props.theme.media.sm} {
 		display: none;
