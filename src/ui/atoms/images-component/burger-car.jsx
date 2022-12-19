@@ -1,3 +1,3 @@
-import BurgerCar from "../../img/burger_car.png";
+import BurgerCarImg from "../../img/burger_car.png";
 
-export const BurgerCarImg = (props) => <img src={BurgerCar} alt="Бмв X6" />
+export const BurgerCar = (props) => <img src={BurgerCarImg} alt="Бмв X6" />

@@ -4,7 +4,7 @@ import { Link } from "../link/link";
 import Arrow from "@mui/icons-material/KeyboardArrowRight";
 
 
-export const PositionedMenu = () => {
+export const MenuActive = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {

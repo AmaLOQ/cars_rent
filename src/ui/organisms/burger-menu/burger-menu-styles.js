@@ -1,12 +1,9 @@
 import { Box, styled, Typography} from "@mui/material";
 import { FootertWrapperRightsIcoContainer } from "../footer/footer-styles";
-import { CallbackOverflow } from "../callback-popup/callback-popup-styles";
+import { CallbackOverflow } from "../callback-popup/callback-popup-desk-styles";
 
 export const BurgerOverflow = styled(CallbackOverflow)`
 	display: ${({open}) => open ? 'flex' : 'none' };
-	@media ${props => props.theme.media.md} {
-		position: fixed;
-	}
 	@media ${props => props.theme.media.landscape} {
 		align-items: start;
 		position: absolute;

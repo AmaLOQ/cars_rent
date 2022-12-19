@@ -2,13 +2,13 @@ import { Button, styled, Box } from "@mui/material";
 
 export const StyledButtonBlack = styled(Button)`
 	border-radius: 100px;
-	font-size: ${({ isBigBlackBtn, theme }) => isBigBlackBtn 
+	font-size: ${({ isBig, theme }) => isBig 
 		? theme.customComponents.buttons.bigBlackBtn.fontSize 
 		: theme.typography.button};
-	padding: ${({ isBigBlackBtn, theme }) => isBigBlackBtn 
+	padding: ${({ isBig, theme }) => isBig 
 		? theme.customComponents.buttons.bigBlackBtn.padding 
 		: '7px 18px'};
-	text-transform: ${({ isBigBlackBtn, theme }) => isBigBlackBtn 
+	text-transform: ${({ isBig, theme }) => isBig 
 		? theme.customComponents.buttons.bigBlackBtn.textTransform 
 		: 'lowercase'};
 	line-height: 140%;

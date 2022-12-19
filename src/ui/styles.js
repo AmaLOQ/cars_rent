@@ -64,6 +64,9 @@ export const theme = createTheme({
 		},
 		body1: {
 			fontSize: '12px',
+		},
+		body2: {
+			fontSize: '22px',
 		}
 	},
 	media: {

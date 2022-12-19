@@ -1,5 +1,5 @@
 import {styled, Box, Typography,} from "@mui/material";
-import { CallbackOverflow, PaperCallback } from "../../organisms/callback-popup/callback-popup-styles";
+import { CallbackOverflow, PaperCallback } from "../callback-popup/callback-popup-desk-styles";
 
 export const RegistrationOverflow = styled(CallbackOverflow)`
 	@media ${props => props.theme.media.landscape} {
@@ -42,7 +42,7 @@ export const DataForSingInBox = styled(Box)`
 `;
 
 export const CheckboxWrapperReg = styled(Box)`
-	margin-top: 3px;
+	margin-top: 2px;
 	margin-bottom: 28px;
 `;
 
@@ -54,7 +54,7 @@ export const Autorization = styled(Box)`
 
 export const AutorizationBox = styled(Box)`
 	display: flex;
-	margin-top: 27px;
+	margin-top: 30px;
 	justify-content: space-between;
 	align-items: center;
 `;

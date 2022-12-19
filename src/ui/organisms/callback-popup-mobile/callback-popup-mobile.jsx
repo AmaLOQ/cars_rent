@@ -9,7 +9,7 @@ import {ReactComponent as Closer} from '../../ico/closer.svg'
 import { ButtonBlack } from '../../atoms/buttons/black-button/black-button';
 import { InputComponent } from '../../atoms/input/input';
 
-export const PopupCallbackMob = () =>
+export const CallbackPopupMob = () =>
 	<CallbackOverflow>
 		<PaperCallbackMob onClick={e => e.stopPropagation()}>
 			<StyledIconButton><Closer/></StyledIconButton>
@@ -17,6 +17,6 @@ export const PopupCallbackMob = () =>
 			<BoxPopupDescr><PopupDescr>Мы свяжемся с вами в ближайшее время!</PopupDescr></BoxPopupDescr>
 			<BoxPopupInput><InputComponent placeholder="Телефон" type="tel" /></BoxPopupInput>
 			<CheckboxWrapper><CheckboxButton text="Согласен (-на) с условиями оферты и обработкой персональных данных" /></CheckboxWrapper>
-			<ButtonBlackWrapper><ButtonBlack isBigBlackBtn text="Отправить" /></ButtonBlackWrapper>
+			<ButtonBlackWrapper><ButtonBlack isBig text="Отправить" /></ButtonBlackWrapper>
 		</PaperCallbackMob>
 	</CallbackOverflow>

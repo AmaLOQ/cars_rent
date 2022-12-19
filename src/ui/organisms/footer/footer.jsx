@@ -1,7 +1,7 @@
 import React from "react";
 import { linksDataFooter } from "./links-data";
 import { Link } from "../../atoms/link/link";
-import { LinksGroup } from "../../molecules/promo-links-group/promo-links-group";
+import { LinksGroup } from "../../molecules/links-group/links-group";
 import { IconGroup } from "../icon-group/icon-group";
 import { iconDataFooter } from "./icons-data";
 import { FootertWrapperNav, FootertNav, FootertContact, FootertContactCall, FootertContactPhone, FootertWrapperRights, FootertWrapperRightsFz14,
