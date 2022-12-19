@@ -14,4 +14,5 @@ export const StyledLink = styled(Link)`
 		? 'underline' 
 		: 'none'};
 	color: ${props => props.theme.palette.primary.main};
+
 `;

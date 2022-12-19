@@ -1,10 +1,20 @@
 import {styled, Box, Typography,} from "@mui/material";
-import { PaperCallback } from "../../organisms/callback-popup/callback-popup-styles";
+import { CallbackOverflow, PaperCallback } from "../callback-popup/callback-popup-desk-styles";
+
+export const RegistrationOverflow = styled(CallbackOverflow)`
+	@media ${props => props.theme.media.landscape} {
+		align-items: start;
+	}
+`;
 
 export const PaperRegistration = styled(PaperCallback)`
 	width: 380px;
 	height: 680px;
 	padding: 40px 30px 50px;
+	@media ${props => props.theme.media.landscape} {
+		position: absolute;
+		top: 2%;
+	}
 `;
 
 export const BoxPopupDescr = styled(Box)`
@@ -32,7 +42,7 @@ export const DataForSingInBox = styled(Box)`
 `;
 
 export const CheckboxWrapperReg = styled(Box)`
-	margin-top: 3px;
+	margin-top: 2px;
 	margin-bottom: 28px;
 `;
 
@@ -44,7 +54,7 @@ export const Autorization = styled(Box)`
 
 export const AutorizationBox = styled(Box)`
 	display: flex;
-	margin-top: 27px;
+	margin-top: 30px;
 	justify-content: space-between;
 	align-items: center;
 `;

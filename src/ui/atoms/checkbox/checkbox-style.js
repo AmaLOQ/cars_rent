@@ -4,12 +4,14 @@ export const StyledBtnCheckbox = styled(FormControlLabel)`
 	margin-right: 0px;
 	span:nth-child(1n) {
 		display: inline-block;
-		verical-align: start;
+		svg {
+			width: 22px;
+			height: 22px;
+		}
 	}
 	span:nth-child(2n) {
 		position: relative;
-		margin-left: -3px; 
-		top: 3px;
+		top: 5px;
 		width: 232px;
 		line-height: 18px;
 		font-size: ${props => props.theme.typography.body1.fontSize};
@@ -18,6 +20,12 @@ export const StyledBtnCheckbox = styled(FormControlLabel)`
 	}
 `;
 
-export const CheckboxWrapper = styled(Box)`
+export const CheckboxWrapper30px = styled(Box)`
+	margin-top: 3px;
+	margin-bottom: 30px;
+`;
+
+export const CheckboxWrapper25px = styled(Box)`
+	margin-top: 3px;
 	margin-bottom: 25px;
 `;

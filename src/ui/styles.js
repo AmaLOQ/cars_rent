@@ -64,7 +64,18 @@ export const theme = createTheme({
 		},
 		body1: {
 			fontSize: '12px',
+		},
+		body2: {
+			fontSize: '22px',
 		}
+	},
+	media: {
+		lg: '(max-width: 1199.9px)',
+		md: '(max-width: 991.9px)',
+		sm: '(max-width: 767.9px)',
+		phone: '(max-width: 575.9px)',
+		smallMobile: '(max-width: 496px)',
+		landscape: '(max-height: 666.9px)',
 	},
 	customComponents: {
 		buttons: {
