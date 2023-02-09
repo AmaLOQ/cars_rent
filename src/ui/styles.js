@@ -62,12 +62,15 @@ export const theme = createTheme({
 		caption: {
 			fontSize: '20px',
 		},
+		caption2: {
+			fontSize: '16px',
+		},
 		body1: {
 			fontSize: '12px',
 		},
 		body2: {
 			fontSize: '22px',
-		}
+		},
 	},
 	media: {
 		lg: '(max-width: 1199.9px)',

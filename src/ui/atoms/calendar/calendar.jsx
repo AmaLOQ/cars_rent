@@ -3,13 +3,10 @@ import dayjs from 'dayjs';
 import TextField from '@mui/material/TextField';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { TimePicker } from '@mui/x-date-pickers/TimePicker';
-import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
-import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
-import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
+import { StyledDataTimePicker } from './calendar-styles';
 
-export default function MaterialUIPickers() {
-  const [value, setValue] = React.useState(dayjs('2014-08-18T21:11:54'));
+export const Calendar = () => {
+  const [value, setValue] = React.useState(dayjs('2023-02-09T17:11:54'));
 
   const handleChange = (newValue) => {
     setValue(newValue);
@@ -17,15 +14,8 @@ export default function MaterialUIPickers() {
 
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
-        <DesktopDatePicker
-          label="Календарь"
-          inputFormat="MM/DD/YYYY"
-          value={value}
-          onChange={handleChange}
-          renderInput={(params) => <TextField {...params} />}
-        />
-        <MobileDatePicker
-          label="Date mobile"
+        <StyledDataTimePicker
+          label="date"
           inputFormat="MM/DD/YYYY"
           value={value}
           onChange={handleChange}

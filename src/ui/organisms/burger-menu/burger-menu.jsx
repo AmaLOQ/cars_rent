@@ -16,7 +16,7 @@ import {BurgerOverflow, BurgerPaper, BurgerMenuHeader, BurgerLogoWrapper, Burger
 } from "./burger-menu-styles";
 
 export const BurgerMenu = ({ open, onClose, ...props }) => {
-	const [openRegistrationPaper, setOpen] = useState(false)
+	const [openRegistrationPaper, setOpen] = useState(false);
 
 	return (
 		<BurgerOverflow open={open} onClick={onClose}>

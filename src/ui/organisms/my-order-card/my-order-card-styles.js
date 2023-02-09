@@ -15,10 +15,27 @@ export const TitleMyOrderCard = styled(Typography)`
 	font-weight: ${props => props.theme.typography.fontWeightBold};
 	font-size: ${props => props.theme.typography.subtitle1.fontSize};
 	line-height: 29px;
+	letter-spacing: -0.1px;
 	color: ${props => props.theme.palette.primary.main};
 `;
 
-export const DateWrapperMyOrderCard = styled(Box)`
+export const RentRangeMyOrderCard = styled(Typography)`
+	font-weight: ${props => props.theme.typography.fontWeight};
+	font-size: ${props => props.theme.typography.caption2.fontSize};
+	line-height: 20px;
+	text-transform: none;
+`;
+
+export const Wrapper20pxMyOrderCard = styled(Box)`
 	margin-top: 20px;
 `;
+
+export const GridContainerSliderMyOrderCard = styled(Box)`
+	margin-top: 15px;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	grid-template-rows: repeat(3, auto);
+`;
+
+
 
