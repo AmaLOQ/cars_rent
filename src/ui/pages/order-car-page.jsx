@@ -12,7 +12,7 @@ export const OrderCarPage = () =>
 		<CssBaseline>
 			<StyledContainer>
 				<Header/>
-				{/* <RentPriceCard/> */}
+
 				<MyOrderCard/>
 			</StyledContainer>
 		</CssBaseline>
