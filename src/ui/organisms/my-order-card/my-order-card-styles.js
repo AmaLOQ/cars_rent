@@ -33,8 +33,27 @@ export const Wrapper20pxMyOrderCard = styled(Box)`
 export const GridContainerSliderMyOrderCard = styled(Box)`
 	margin-top: 15px;
 	display: grid;
+	justify-content: space-between;
 	grid-template-columns: repeat(2, auto);
-	grid-template-rows: repeat(3, auto);
+	grid-template-rows: auto;
+`;
+export const GridContainerOneColumn = styled(Box)`
+	grid-column: 1/3;
+`;
+
+export const GridContainerCasco = styled(Box)`
+	margin-top: 23px;
+	display: grid;
+	justify-content: space-between;
+	grid-template-columns: repeat(2, auto);
+	grid-template-rows: auto;
+`;
+
+export const BasicTextMyOrderCard = styled(Box)`
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 12px;
+	color: #242424;
 `;
 
 
