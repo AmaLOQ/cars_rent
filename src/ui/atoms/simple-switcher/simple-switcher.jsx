@@ -13,7 +13,7 @@ export const ControlledSwitcher = () => {
     <StyledControlledSwitcher
       checked={checked}
       onChange={handleChange}
-	  size="medium"
+	  size="small"
       inputProps={{ 'aria-label': 'controlled' }}
     />
   );
