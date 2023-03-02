@@ -41,20 +41,35 @@ export const GridContainerOneColumn = styled(Box)`
 	grid-column: 1/3;
 `;
 
-export const GridContainerCasco = styled(Box)`
+export const GridContainerCasco = styled(GridContainerSliderMyOrderCard)`
 	margin-top: 23px;
-	display: grid;
-	justify-content: space-between;
-	grid-template-columns: repeat(2, auto);
-	grid-template-rows: auto;
+`;
+
+export const GridContainerPrice = styled(GridContainerSliderMyOrderCard)`
+	margin-top: 10px;
+	row-gap: 15px;
 `;
 
 export const BasicTextMyOrderCard = styled(Box)`
-	font-weight: 400;
-	font-size: 12px;
+	font-weight: ${props => props.theme.typography.fontWeightRegular};
+	font-size: ${props => props.theme.typography.body1.fontSize};
 	line-height: 12px;
-	color: #242424;
+	color: ${props => props.theme.palette.primary.main};
 `;
+
+export const TotalPrice = styled(Box)`
+	margin-top: 16px;
+	font-weight: ${props => props.theme.typography.fontWeight};
+	font-size: ${props => props.theme.typography.caption2.fontSize};
+	line-height: 20px;
+`;
+
+export const BlackButtonContainer = styled(Box)`
+	display: flex;
+	margin-top: 10px;
+	justify-content: center;
+`;
+
 
 
 
