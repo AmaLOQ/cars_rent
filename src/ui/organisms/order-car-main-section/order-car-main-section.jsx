@@ -21,6 +21,5 @@ export const OrderCarMainSection = () =>
 			</OrderCarContainer>
 			<MyOrderCard/>
 		</OrderCarMainContainer>
-		fsdfsdfa
 	</>
 
