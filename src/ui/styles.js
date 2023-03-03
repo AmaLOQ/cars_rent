@@ -8,6 +8,7 @@ const COLOR = {
 	GRADIENT_DEFAULT: 'linear-gradient(269.87deg, #014369 -17.97%, #289FCA 101.14%)',
 	GRADIENT_HOVER: 'linear-gradient(269.87deg, rgba(1, 67, 105, 0.7) -17.97%, rgba(40, 159, 202, 0.7) 101.14%)',
 	RED_LIGHT: '#FFC5C5',
+	GRAY_ACAC: '#ACACAC',
 }
 
 export const theme = createTheme({
@@ -21,7 +22,8 @@ export const theme = createTheme({
 			light: COLOR.GRAY_LIGHT,
 		},
 		warning: {
-			main: COLOR.RED_LIGHT
+			main: COLOR.RED_LIGHT,
+			light: COLOR.GRAY_ACAC,
 		},
 		white: '#fff',
 	},
@@ -71,6 +73,11 @@ export const theme = createTheme({
 		body2: {
 			fontSize: '22px',
 		},
+	},
+	textVariant: {
+		upper: 'uppercase',
+		lower: 'lowercase',
+		capital: 'capitalize'
 	},
 	media: {
 		lg: '(max-width: 1199.9px)',
