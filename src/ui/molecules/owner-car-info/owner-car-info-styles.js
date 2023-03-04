@@ -2,6 +2,9 @@ import { Box, styled } from "@mui/system";
 import { Typography } from "@mui/material";
 
 export const OwnerCarMainContainer = styled(Box)`
+	max-width: 307px;
+	align-items: center;
+	gap: 5px;
 	display: grid;
 	grid-template-columns: 3 auto;
 	grid-template-rows: 3 auto;
@@ -29,6 +32,7 @@ export const OwnerCarModel = styled(Typography)`
 	font-size: ${props => props.theme.typography.h2.fontSize};
 	color: ${props => props.theme.palette.primary.main};
 	grid-column: 1 / 4;
+	letter-spacing: -0.4px;
 `; 
 
 export const OwnerCarStarsContainer = styled(Box)`
