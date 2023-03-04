@@ -12,7 +12,8 @@ import { ownerCarData } from "../../molecules/owner-car-info/owner-car-data";
 import { RentPriceCard } from "../../molecules/rent-price-card/rent-price-card";
 
 export const OrderCarMainSection = () =>
-	<>
+	<>  
+	
 		<DottedTextContainer>
 			<DottedGroup dottedData={dottedData}/>
 		</DottedTextContainer>
