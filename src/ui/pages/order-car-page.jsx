@@ -13,6 +13,7 @@ export const OrderCarPage = () =>
 			<StyledContainer>
 				<Header/>
 				<OrderCarMainSection/>
+				
 				{/* <RentPriceCard/>
 				<MyOrderCard/> */}
 			</StyledContainer>
