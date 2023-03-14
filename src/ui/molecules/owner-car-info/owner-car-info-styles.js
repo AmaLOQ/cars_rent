@@ -2,12 +2,18 @@ import { Box, styled } from "@mui/system";
 import { Typography } from "@mui/material";
 import {Rating} from "@mui/material";
 
+export const OwnerCarGeneralContainer = styled(Box)`
+	display: grid;
+	grid-template-columns: 1 auto;
+	grid-template-rows: 2 auto;
+`; 
+
 export const OwnerCarMainContainer = styled(Box)`
 	max-width: 307px;
 	align-items: center;
 	display: grid;
 	grid-template-columns: 45px 113px auto;
-	grid-template-rows: 3 auto;
+	grid-template-rows: 4 auto;
 `; 
 
 export const OwnerCarName = styled(Typography)`
@@ -53,6 +59,14 @@ export const OwnerCarFeedbackContainer = styled(Typography)`
 `; 
 
 export const StyledRating = styled(Rating)`
+	color: ${props => props.theme.palette.primary.main};
+`; 
 
+export const OwnerCarModelDescription = styled(Typography)`
+	margin-top: 40px;
+	font-weight: ${props => props.theme.typography.fontWeightRegular};
+	font-size: ${props => props.theme.typography.fontSize};
+	line-height: 20px;
+	color: ${props => props.theme.palette.primary.main};
 `; 
 
