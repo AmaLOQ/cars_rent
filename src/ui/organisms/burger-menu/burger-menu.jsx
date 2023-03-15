@@ -4,7 +4,7 @@ import { LinksGroup } from "../../molecules/links-group/links-group";
 import { linksDataBurgerMenu } from "./burger-links-data";
 import { MenuActive } from "../../atoms/menu-active/menu-active";
 import { iconDataBurgerMenu } from "./burger-icons-data";
-import { IconGroup } from "../icon-group/icon-group";
+import { IconGroup } from "../../molecules/icon-group/icon-group";
 import { Link } from "../../atoms/link/link";
 import { BlackButton } from "../../atoms/buttons/black-button/black-button";
 import { BurgerCar } from "../../atoms/images-component/burger-car";
