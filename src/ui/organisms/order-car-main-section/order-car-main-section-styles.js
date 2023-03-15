@@ -38,3 +38,7 @@ export const CarContainerSlideCount = styled(Typography)`
 	justify-self: center;
 	grid-column: 2/3;
 `;
+
+export const FeedbacksAndCharactersContainer = styled(Box)`
+	grid-template-columns: 1 auto;
+`;
