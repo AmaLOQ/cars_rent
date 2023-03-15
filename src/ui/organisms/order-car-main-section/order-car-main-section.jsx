@@ -9,6 +9,7 @@ import { OrderCarMainContainer, OrderCarContainer, CarContainerSlideCount, TabCo
 import { OwnerCarGroup } from "../../molecules/owner-car-info/owner-car-info-group";
 import { ownerCarData } from "../../molecules/owner-car-info/owner-car-data";
 import { RentPriceCard } from "../../molecules/rent-price-card/rent-price-card";
+import { Characteristics } from "../../molecules/main-section-characteristics/main-section-characteristics";
 
 export const OrderCarMainSection = () =>
 	<>  
@@ -25,6 +26,7 @@ export const OrderCarMainSection = () =>
 			<MyOrderCard/>
 			<FeedbacksAndCharactersContainer>
 				<OwnerCarGroup ownerCarData={ownerCarData}/>
+				<Characteristics/>
 			</FeedbacksAndCharactersContainer>
 			<RentPriceCard/>
 		</OrderCarMainContainer>
